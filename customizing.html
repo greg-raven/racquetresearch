@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Customizing to Match Racquets</title>
+
+<!-- #bbinclude "meta.incl" -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<meta name="description" content="Racquet evaluation and ranking by physics re tennis elbow.">
+<meta name="keywords" content="tennis, tennis elbow, racket, racquet, shock, torque, shoulder, eccentric impact, coefficient of restitution, conservation of momentum">
+<link rel="stylesheet" href="/_assets/css/rr.css" type="text/css" media="screen">
+<!-- end of meta content -->
+<!-- end bbinclude -->
+</head>
+<body id="top">
+<!-- #bbinclude "header.incl" -->
+<!-- begin header.incl -->
+<div class="container-fluid">
+    <header>
+      <div class="page-header">
+        <h1> RACQUET SCIENCE <small>using physics to help select a racquet</small> </h1>
+      </div>
+    </header>
+    <div class="row">
+        <div class="col-md-9">
+<!-- end header.incl -->
+<!-- end bbinclude -->
+		<h2>Customizing to Match Racquet Specs</h2>
+		<p>In case a string breaks, you'd like to have a spare in your bag that will be exactly the same as what you have been using. You can't rely on just the fact that both are the same model, so some customizing will be necessary to assure this. Let's suppose you have two racquets, which we'll call Red and Blue, and you know the following specs for each of them: weight, in grams; balance point distance from butt, in cm; swingweight about an axis 10 cm from butt, in kg&middot;cm^2; and length, in inches. Swingweight (also called &quot;inertia&quot;) is measured on special machines -- ask your stringer. Some mail order companies, like Tennis Warehouse, will (for a small charge) measure all of the specs of your racquets after the string job, including swingweight, so you will know exactly where you are starting from. You want to match these two racquets, Red and Blue, so they have the same weight, balance, and swingweight. Here's a two step procedure:</p>
+		<p><b>Step One:</b> Select the racquet that is more head-light, i.e. which has its balance point closer to the hand. This will mean the one with the lowest balance spec. In our example, let's say the most head-light is Blue. By adding weight at the butt of the other racquet, Red, match its balance point to the most head-light, Blue, using the formula for balance point shift: </p>
+		<p>s = d*(m / (M + m)) <a href="derivations.html#new_balance_point">Derivation</a></p>
+		<blockquote> 
+			<p>s = shift in balance, in cm.  
+				A &quot;point&quot; is 1/8 inch, or 0.3175 cm. Points head-heavy (or head-light) are measured from the midpoint of the racquet's length. 
+				d = distance from added weight to original balance point, in cm 
+				m = amount of added weight, in grams 
+				M = original racquet weight, in grams</p>
+		</blockquote>
+		<p>Note: in the following discussion, the symbol * means multiply, / means divide by, and ^ means to the power of (^2 means squared, or multiply that by itself).</p>
+		<p><i><b>Example</b></i> of balance shift calculation: Red has balance 31.9 cm and Blue has balance 31.2 cm. Blue and Red are the same length and both weigh 340 grams. The swingweight of Blue is 322 and Red is 330. The desired balance point shift is 0.7 cm (31.9 - 31.2), so plug 0.7 into the left side of the equation in place of s. The butt end, where the weight is added, is 31.9 cm from the balance point of Red, so plug 31.9 into the right side in place of d. We don't know the amount of added weight m, but we do know that the original weight M is 340. Now that we've managed to substitute numbers for all variables except m, we can solve for m with simple algebra:</p>
+		<p>0.7 = 31.9*(m/(340 + m)) 
+			0.7/31.9 = 0.022 = m/(340 + m) 
+			0.022*(340 + m) = m 
+			7.48 + 0.022*m = m 
+			7.48 = 0.978*m 
+			m = 7.48/0.978 = 7.6 </p>
+		<p>From this calculation, you will need 7.6 grams at the butt end of Red to shift the balance of Red back to match the balance of Blue.</p>
+		<hr> 
+		<p><b>Step Two:</b> Having matched the balance of Red to Blue, now you have to add some weights to Blue in order to match Blue's swingweight to the swingweight of Red, and also to match Blue's weight to the new total weight of Red, while keeping the match in balance. This additional weight on Blue will be in two pieces, a (headweight) and b (tailweight), disposed on either side of Blue's balance point. These distances are x - r and y - r. We don't know yet how much these weights are, or where they will be placed, so these are four unknowns. Four simultaneous equations involving these four unknowns can solve for them. Here are the variables used in the following discussion: </p>
+		<p>a = headweight, in kg. -- please note, this is kilograms, not grams (a gram is a thousandth of a kilogram, so move your decimal point, e.g. 6 grams = 0.006 kg)</p>
+		<p>b = tailweight, in kg.</p>
+		<p>x = distance of headweight from the 10 cm axis, in centimeters</p>
+		<p>y = distance of tailweight from the 10 cm axis, in centimeters</p>
+		<p>r = distance, in cm, of the racquet's balance point from the 10 cm axis of rotation. We know r because we know the balance and the location of the axis [10 cm from the butt for RDC swingweight measurements], so just subtract 10 from the balance spec and you have r. The r in the formulas is not measured from the 10 cm axis but from the axis specified by the player's grip, so r is not r. </p>
+		<p>The four unknowns are a, b, x, and y. Note that the definitions of x and y have been changed from the formula for customizing balance. We need at least four independent equations to solve for these four unknowns, so here's how to derive them: </p>
+		<p>Equation (1): a + b = total added weight, in kg.  
+			 
+			The total added weight is the amount that will bring Blue up to the same weight as modified Red. Equation (1) follows from this requirement. We know the total added weight, so we can plug a number in there.</p>
+		<p>Equation (2): a*(x - r) + b*(y - r) = 0  
+			 
+			Equation (2) follows from the requirement that balance remain unchanged. No change in balance means equilibrium about the original balance point, which is now the same for the two racquets. Equilibrium means that the sum of moments about the balance point is zero. Each moment is the weight times its lever arm, and the lever arm in each case is the distance of the weight from the original balance point. The distance for a is (x - r), and the distance for b is (y - r). Subtracting r removes the common length from x and y. Equation (2) is written in this awkward fashion to avoid even more complexity in Equation (4).  
+			 
+			Equation (3): a*x^2 + b*y^2 = total added swingweight, in kg&middot;cm^2 
+			 
+			The total added swingweight (right side of the equation) is the difference between the original swingweight of Blue and the swingweight of Red after modification to match its balance to Blue, so subtract to find this difference and plug in the number. Red's post-modification swingweight will usually be approximately the same as its original swingweight since the addition of the weight at the butt end to match the balance will not add appreciable swingweight due to its short distance (10 cm) from the axis of rotation. Ten grams at the butt would be necessary to add 1 swingweight unit. Swingweight is mass (in kg), times distance (in cm) squared, this distance being from the mass element to the axis of rotation you are considering, so you can figure out how much swingweight you have added by the tailweight. </p>
+		<p>Equation (3) follows from the definition of swingweight: the sum of the products of all the mass elements and the squares of their distances from the axis of rotation. Each added weight will contribute some swingweight about the 10 cm axis. The total added swingweight about the 10 cm axis from the two additional weights a and b is the sum of each weight times the square of its distance (x and y respectively). We don't know these weights or distances yet, but we can write equations with the variables that represent them, and using these equations we can come back and find out later what the values of the variables are. </p>
+		<p>Equation (4): [I' - M'*r'^2] - [I - M*r^2] = a*(x - r)^2 + b*(y - r)^2</p>
+		<p>Three equations are not enough to solve for four unknowns, so this fourth one is necessary. Although it might look scary/boring/impossible, it is only high school math, and it isn't a lot to ask that you know how to do this. Equation (4) follows from application of the <a href="parallel.html">Parallel Axis Theorem</a> to Blue, before and then after the addition of weights a and b to Blue at the distances x and y from the 10 cm axis of rotation. These weights are at distances (x - r) and (y - r) respectively from the balance point of Blue. We know that the resulting swingweight will match that of Red, and by applying the Parallel Axis Theorem we can find the difference between the moment of inertia (swingweight) about an axis through the balance point, before and after, and knowing that, we can write an equation that will contain the four unknowns.</p>
+		<p>Here are the definitions of variables used in the following derivation of Equation (4): 
+			 
+			I = swingweight of Blue before modification, in kg&middot;cm^2 
+			I' = swingweight of Blue after modification, in kg&middot;cm^2 
+			Ic<sub>1</sub> = moment of inertia about an axis of rotation through the balance point of Blue before modification, in kg&middot;cm^2 
+			Ic<sub>2</sub> = moment of inertia about an axis of rotation through the balance point of Blue after modification, in kg&middot;cm^2 
+			M = mass of Blue before modification, in kg. 
+			M' = mass of Blue after modification, in kg. 
+			r = distance from axis of rotation to balance point of Blue before modification, in cm. 
+			r' = distance from axis of rotation to balance point of Blue after modification, in cm. 
+			 
+			The Parallel Axis Theorem tells us that before modification of Blue, its swingweight about the 10 cm axis (I), which we have from measurement, was equal to the sum of its swingweight about an axis through its balance point (Ic<sub>1</sub>) and the product of its mass (M) times the square of the distance (r) from the axis of rotation to the balance point: 
+			 
+			I = Ic<sub>1</sub> + M*r^2 </p>
+		<p>and therefore, by algebra:  
+			Ic<sub>1</sub> = I - M*r^2</p>
+		<p>Applying the Parallel Axis Theorem to Blue after modification:</p>
+		<p>I' = Ic<sub>2</sub> + M'*r'^2 </p>
+		<p>and therefore:  
+			Ic<sub>2</sub> = I' - M'*r'^2</p>
+		<p>The difference between Ic<sub>1</sub> and Ic<sub>2</sub>, the swingweights about the balance point (mass center) axis before and after modification, will therefore be: 
+			[I' - M'*r'^2] - [I - M*r^2]. </p>
+		<p>This difference, which constitutes the left side of Equation (4) can be determined because all of the terms in the expression are already known: I' is the post-modification swingweight of Red, which you are trying to match, and you know this; M' is the new weight of Red, which you are also trying to match, and you already have this from the balance modification that's been done; r' is the new distance of the balance point of Blue from the 10 cm axis of rotation after modification, which will be the same as the original r because we are keeping the balance of Blue the same now that Red has been matched to it; I is the original measured swingweight of Blue; M is the original measured weight of Blue; and r is the original measured distance from the 10 cm axis used for swingweight measurements to the balance point of Blue (i.e., it's the balance spec of Blue, minus 10, because 10 cm is the distance from the butt end to the axis of rotation used by the RDC, and balance is measured from the butt). Ic<sub>2</sub> - Ic<sub>1</sub> is therefore a known quantity. It is the increase in the swingweight (also known as moment of inertia, or rotational inertia) of Blue about an axis of rotation going through Blue's balance point, or mass center. </p>
+		<p>This known increase is equal to the sum of the contributed swingweights about the mass center axis due to the added weights a and b. That's the right side of Equation (4). Each of these contributed swingweights about the mass center (balance point) axis is the product of the added mass times the square of its distance from the mass center axis. For a, this distance is (x - r) and for b the distance is (y - r). Recall that r is the distance in cm from the 10 cm axis to the balance point (so r = balance - 10), and x and y are the unknown distances of the unknown weights a and b, respectively, from the 10 cm axis. In math shorthand, we can state this new equation as:</p>
+		<p>Ic<sub>2</sub> - Ic<sub>1</sub> = a*(x - r)^2 + b*(y - r)^2</p>
+		<p>Ic<sub>2</sub> - Ic<sub>1</sub> = [I' - M'*r'^2] - [I - M*r^2] from before, so</p>
+		<p>[I' - M'*r'^2] - [I - M*r^2] = a*(x - r)^2 + b*(y - r)^2</p>
+		<p>Voila, Equation (4). The left side is can be found from measurements, so plug these known values in (see discussion above) and you will have some number for the left side instead of the variables there. With the left side now reduced to a number, now we have four equations involving only four unknowns, and it is therefore possible (but not easy) to solve for the four unknowns -- a, b, x, and y -- by this system of four simultaneous equations, each independent of the others. Once you have values for these unknowns, you will know how much weight to add where on Blue to match its weight and swingweight to Red, while maintaining the balance and weight matches you have already done. </p>
+		<p>A high-end pocket calculator that can solve a system of four simultaneous equations is what you'll need to do this job, such as the Texas Instruments TI-86.</p>
+		<hr> 
+		<p>Formula for shift in balance: s = d*(m / (M + m)) <a href="derivations.html#new_balance_point">Derivation</a></p>
+		<blockquote> 
+			<p>s = shift in balance, in cm 
+				d = distance from added weight to original balance point, in cm 
+				m = amount of added weight, in grams 
+				M = original racquet weight, in grams</p>
+		</blockquote>
+		<p>Equation (1): a + b = total added weight, in kg.</p>
+		<p>Equation (2): a*(x - r) + b*(y - r) = 0 </p>
+		<p>Equation (3): a*x^2 + b*y^2 = total added swingweight, in kg&middot;cm^2</p>
+		<p>Equation (4): [I' - M'*r'^2] - [I - M*r^2] = a*(x - r)^2 + b*(y - r)^2</p>
+		<p>Unknowns in Equations 1 - 4: a, b, x, y</p>
+		<blockquote> 
+			<p>a = headweight, in kg. -- please note, this is kilograms, not grams (a gram is a thousandth of a kilogram, so move your decimal point, e.g. 6 grams = 0.006 kg)</p>
+			<p>b = tailweight, in kg.</p>
+			<p>x = distance of headweight from the 10 cm axis, in centimeters</p>
+			<p>y = distance of tailweight from the 10 cm axis, in centimeters</p>
+		</blockquote>
+		<p>Other symbols/constants:</p>
+		<blockquote> 
+			<p>r = distance from axis of rotation (10 cm) to balance point of Blue before modification, in cm: r = Blue balance spec - 10 
+				 
+				r' = distance from axis of rotation to balance point of Blue after modification, in cm</p>
+		</blockquote>
+		<blockquote> 
+			<p>I = swingweight of Blue before modification, in kg&middot;cm^2 
+				 
+				I' = swingweight of Blue after modification, in kg&middot;cm^2: I' = Red swingweight after balance matching. 
+				 
+				M = mass of Blue before modification, in kg 
+				 
+				M' = mass of Blue after modification, in kg. M' = Red weight, after balance matching.</p>
+		</blockquote>
+		<p>Measured Specs:</p>
+		<p>r<sub>1</sub> = balance of Blue</p>
+		<p>r<sub>2</sub> = balance of Red</p>
+		<p>M<sub>1 </sub>= weight of Blue</p>
+		<p>M<sub>2</sub> = weight of Red</p>
+		<p>I<sub>1</sub> = swingweight of Blue</p>
+		<p>I<sub>2</sub> = swingweight of Red</p>
+	</td>
+</tr>
+</table>
+<!-- #bbinclude "footer.incl" -->
+<!-- begin footer.incl -->
+
+<!-- begin navbar.incl -->
+    </div><!-- /.col-md-9 -->
+	<div class="col-md-3">
+		<ul class="nav nav-pills nav-stacked">
+			<li> <a href="/about_this_site.html">About this Site</a> </li>
+			<li> <a href="/sevencri.html">Introduction to Racquet Science</a> </li>
+			<li> <a href="/idiots_guide.html">Complete Idiot's Guide to Choosing a Racquet</a> </li>
+			<li> <a href="/faq.html">Frequently Asked Questions (FAQ)</a> </li>
+			<li> <a href="/formulas.html">Formulas for Evaluation of Racquet Performance</a> </li>
+			<li> <a href="/derivations.html">Derivations of Formulas</a> </li>
+			<li> <a href="/2002/index.html">Racquet Rankings</a> </li>
+			<li> <a href="/2002/Mfr.html">Racquet Performance by Manufacturer</a> </li>
+			<li> <a href="/2002/Specs.html">Specs of Current Racquets</a> </li>
+			<li> <a href="/Discontinued.html">Specs of Discontinued Racquets</a> </li>
+			<li> <a href="/balancetip.html">Customizing Balance</a> </li>
+			<li> <a href="/customizing.html">Matching Racquets</a> </li>
+			<li> <a href="/CounterweightingEffect.html">Tailweighted Hammer Tops All Other Racquets</a> </li>
+			<li> <a href="/site.html">Site Contents</a> </li>
+			<li> <a href="/directory.html">Site Directory</a> </li>
+			<li> <a href="/links.html">Links</a> </li>
+			<li> <a href="/whatsnew.html">What's New</a> </li>
+			<li> <a href="/index.html">Home Page</a> </li>
+		</ul>
+	</div><!-- /.col-md-3 -->
+<!-- end navbar.incl -->
+
+	</div><!-- /.row -->
+</div><!-- /.container-fluid -->
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<!-- end footer.incl -->
+<!-- end bbinclude -->
+</body>
+</html>

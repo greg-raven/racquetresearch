@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Quality Index</title>
+
+<!-- #bbinclude "meta.incl" -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<meta name="description" content="Racquet evaluation and ranking by physics re tennis elbow.">
+<meta name="keywords" content="tennis, tennis elbow, racket, racquet, shock, torque, shoulder, eccentric impact, coefficient of restitution, conservation of momentum">
+<link rel="stylesheet" href="/_assets/css/rr.css" type="text/css" media="screen">
+<!-- end of meta content -->
+<!-- end bbinclude -->
+<script type="text/javascript" language="javascript" charset="macintosh">
+<!--
+function convert() {
+var mass = document.comfort.mass.value;
+var mass = mass / 1000;
+var balance = document.comfort.balance.value;
+var balance = Math.pow(balance,2);
+var swgwt = document.comfort.swgwt.value;
+var index = (mass * balance) / swgwt;
+var index = Math.round(index * 1000) / 1000;
+document.comfort.index.value = index;
+return index;
+}
+//-->
+</script>
+</head>
+<body id="top">
+<!-- #bbinclude "header.incl" -->
+<!-- begin header.incl -->
+<div class="container-fluid">
+    <header>
+      <div class="page-header">
+        <h1> RACQUET SCIENCE <small>using physics to help select a racquet</small> </h1>
+      </div>
+    </header>
+    <div class="row">
+        <div class="col-md-9">
+<!-- end header.incl -->
+<!-- end bbinclude -->
+		<h2>Quality Index</h2>
+		<p>A fairly reliable index of racquet quality is the ratio Mr&sup2;/I , which in spreadsheet cell formula is [(M*r^2)/I] . The variables in this ratio are the published racquet specifications for strung and gripped racquets. M is the racquet mass, in kilograms (e.g. 320 grams = 0.320 kg), r is the distance, in centimeters, from the butt to the balance point, and I is the swingweight about the standard 10 cm axis of rotation used for published swingweight measurements. </p>
+		<p>This site cannot be updated frequently enough to keep up with the new racquet models, so this quality index should be used for judging the new stuff. In the 2002 survey, when ranked by this index, 104 of the 167 racquets were within 10 places of their Expert ranking, and at most off by 31 at the extreme. The average ranks were almost the same. Using this formula, index values of 1.10 or less are good; 1.18 or more are bad. This index will quickly evaluate new racquets which have not been ranked yet here. <a href="http://www.tennis-warehouse.com">Tennis Warehouse</a> is a good source for new racquet specs.</p>
+		<p>For example, the Prince Graphite Classic OS has a mass of 348 grams, a balance of 30.8 cm, and a swingweight of 335, according to the USRSA database. Plugging these values into the formula:</p>
+		<p> Mr&sup2;/I = (0.348*30.8&sup2;)/335 = 0.985</p>
+		<p>This value, or quality index, of 0.985 is extremely low, therefore good, consistent with the top rank of this racquet in the Expert rankings. Other racquets rank as follows:</p>
+	<p> Different racquets often play and feel different. One aspect of these differences is how they interact with your arm. They can be comfortable to play with, or using them can create sensitivity in your wrist, elbow, and/or shoulder. These differences are thought to be caused by the mass (weight) of the racquet, the balance point, the swingweight, and the flex. </p>
+	<p> It is a difficult process to determine which racquets are going to be best for any given person. This estimator will give you a rough idea about whether a particular racquet is likely to be comfortable or not.</p>
+	<p> If you don't have the basis measurements for your racquet, check to see if these specifications have been published by the USRSA. The easiest way to do this is by selecting the racquet of interest in the <a href="http://www.racquettech.com/members/tools/racquet_specs.html">Racquet Specs On-Line</a>, and then reading the specifications. </p>
+	<h3>Enter Your Racquet's Specifications</h3>
+
+	<form action="quality_index.html" name="comfort">
+		<table border="1" cellspacing="2" align="center">
+		<tr>
+			<td> Mass in grams </td>
+			<td> <input type="text" name="mass" size="10" maxlength="10" onChange="convert(this)" value="348"> gm </td>
+		</tr>
+		<tr>
+			<td> Balance in centimeters </td>
+			<td> <input type="text" name="balance" size="10" maxlength="10" value="30.8" onChange="convert(this)"> cm </td>
+		</tr>
+		<tr>
+			<td> Swingweight </td>
+			<td> <input type="text" name="swgwt" size="10" maxlength="10" value="335" onChange="convert(this)"> kg&middot;cm&sup2; </td>
+		</tr>
+		<tr>
+			<td> Quality Index</td>
+			<td> <input type="text" name="index" size="10" maxlength="10" value="0.985" readonly> (lower is better)</td>
+		</tr>
+		</table>
+	</form>
+	<noscript> <p style="color: red; text-align: center"><b>This page uses JavaScript. Please enable it or upgrade your browser.</b> </p></noscript>
+	<h3>Notes</h3>
+	<ul>
+		<li>The lower the Quality Index, the better. That is, a Quality Index of 1.00 is better than one of 1.10, but worse than one of .90. Unmodified performance racquets typically run between .87 (excellent) and 1.40 (poor) on this comfort scale.</li>
+		<li>This calculator does not factor in flex or overall racquet power.</li>
+		<li>A racquet that has a good Quality Index isn't necessarily going to be a good racquet for everyone. You will also need to chose a racquet with a power level that matches your swing speed. </li>
+	</ul>
+	<h3>Quality Index Distribution</h3>
+	<p> Of 663 racquets for which USRSA has specifications (gathered using a Babolat Racquet Diagnostic Center), the average estimated Quality Index is 1.1224. The breakdown in scores is as follows: </p>
+	<table class="fullpack" align="center">
+	<tr>
+		<th>Quality Index</th>
+		<th>No. of Racquets</th>
+	</tr>
+	<tr>
+		<td>.87</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>.95</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>.96</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>.97</td>
+		<td>3</td>
+	</tr>
+	<tr>
+		<td>.99</td>
+		<td>4</td>
+	</tr>
+	<tr>
+		<td>1.00</td>
+		<td>7</td>
+	</tr>
+	<tr>
+		<td>1.01</td>
+		<td>4</td>
+	</tr>
+	<tr>
+		<td>1.02</td>
+		<td>6</td>
+	</tr>
+	<tr>
+		<td>1.03</td>
+		<td>13</td>
+	</tr>
+	<tr>
+		<td>1.04</td>
+		<td>15</td>
+	</tr>
+	<tr>
+		<td>1.05</td>
+		<td>28</td>
+	</tr>
+	<tr>
+		<td>1.06</td>
+		<td>23</td>
+	</tr>
+	<tr>
+		<td>1.07</td>
+		<td>31</td>
+	</tr>
+	<tr>
+		<td>1.08</td>
+		<td>34</td>
+	</tr>
+	<tr>
+		<td>1.09</td>
+		<td>26</td>
+	</tr>
+	<tr>
+		<td>1.10</td>
+		<td>40</td>
+	</tr>
+	<tr>
+		<td>1.11</td>
+		<td>33</td>
+	</tr>
+	<tr>
+		<td>1.12</td>
+		<td>37</td>
+	</tr>
+	<tr>
+		<td colspan="2"><hr></td>
+	</tr>
+	<tr>
+		<td>1.13</td>
+		<td>41</td>
+	</tr>
+	<tr>
+		<td>1.14</td>
+		<td>54</td>
+	</tr>
+	<tr>
+		<td>1.15</td>
+		<td>40</td>
+	</tr>
+	<tr>
+		<td>1.16</td>
+		<td>42</td>
+	</tr>
+	<tr>
+		<td>1.17</td>
+		<td>45</td>
+	</tr>
+	<tr>
+		<td>1.18</td>
+		<td>25</td>
+	</tr>
+	<tr>
+		<td>1.19</td>
+		<td>27</td>
+	</tr>
+	<tr>
+		<td>1.20</td>
+		<td>23</td>
+	</tr>
+	<tr>
+		<td>1.21</td>
+		<td>20</td>
+	</tr>
+	<tr>
+		<td>1.22</td>
+		<td>11</td>
+	</tr>
+	<tr>
+		<td>1.23</td>
+		<td>5</td>
+	</tr>
+	<tr>
+		<td>1.24</td>
+		<td>3</td>
+	</tr>
+	<tr>
+		<td>1.25</td>
+		<td>6</td>
+	</tr>
+	<tr>
+		<td>1.26</td>
+		<td>5</td>
+	</tr>
+	<tr>
+		<td>1.27</td>
+		<td>4</td>
+	</tr>
+	<tr>
+		<td>1.29</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>1.32</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>1.33</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>1.37</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>1.41</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<th>Total Racquets</th>
+		<th>663</th>
+	</tr>
+	</table>
+	</td>
+</tr>
+</table>
+<!-- #bbinclude "footer.incl" -->
+<!-- begin footer.incl -->
+
+<!-- begin navbar.incl -->
+    </div><!-- /.col-md-9 -->
+	<div class="col-md-3">
+		<ul class="nav nav-pills nav-stacked">
+			<li> <a href="/about_this_site.html">About this Site</a> </li>
+			<li> <a href="/sevencri.html">Introduction to Racquet Science</a> </li>
+			<li> <a href="/idiots_guide.html">Complete Idiot's Guide to Choosing a Racquet</a> </li>
+			<li> <a href="/faq.html">Frequently Asked Questions (FAQ)</a> </li>
+			<li> <a href="/formulas.html">Formulas for Evaluation of Racquet Performance</a> </li>
+			<li> <a href="/derivations.html">Derivations of Formulas</a> </li>
+			<li> <a href="/2002/index.html">Racquet Rankings</a> </li>
+			<li> <a href="/2002/Mfr.html">Racquet Performance by Manufacturer</a> </li>
+			<li> <a href="/2002/Specs.html">Specs of Current Racquets</a> </li>
+			<li> <a href="/Discontinued.html">Specs of Discontinued Racquets</a> </li>
+			<li> <a href="/balancetip.html">Customizing Balance</a> </li>
+			<li> <a href="/customizing.html">Matching Racquets</a> </li>
+			<li> <a href="/CounterweightingEffect.html">Tailweighted Hammer Tops All Other Racquets</a> </li>
+			<li> <a href="/site.html">Site Contents</a> </li>
+			<li> <a href="/directory.html">Site Directory</a> </li>
+			<li> <a href="/links.html">Links</a> </li>
+			<li> <a href="/whatsnew.html">What's New</a> </li>
+			<li> <a href="/index.html">Home Page</a> </li>
+		</ul>
+	</div><!-- /.col-md-3 -->
+<!-- end navbar.incl -->
+
+	</div><!-- /.row -->
+</div><!-- /.container-fluid -->
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<!-- end footer.incl -->
+<!-- end bbinclude -->
+</body>
+</html>

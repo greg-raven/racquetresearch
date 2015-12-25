@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>The Parallel Axis Theorem</title>
+
+<!-- #bbinclude "meta.incl" -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<meta name="description" content="Racquet evaluation and ranking by physics re tennis elbow.">
+<meta name="keywords" content="tennis, tennis elbow, racket, racquet, shock, torque, shoulder, eccentric impact, coefficient of restitution, conservation of momentum">
+<link rel="stylesheet" href="/_assets/css/rr.css" type="text/css" media="screen">
+<!-- end of meta content -->
+<!-- end bbinclude -->
+</head>
+<body id="top">
+<!-- #bbinclude "header.incl" -->
+<!-- begin header.incl -->
+<div class="container-fluid">
+    <header>
+      <div class="page-header">
+        <h1> RACQUET SCIENCE <small>using physics to help select a racquet</small> </h1>
+      </div>
+    </header>
+    <div class="row">
+        <div class="col-md-9">
+<!-- end header.incl -->
+<!-- end bbinclude -->
+		<blockquote> 
+			<h2>The Parallel Axis Theorem</h2>
+			<p> The swingweight of a racquet is measured by the Babolat RDC using an axis of rotation 10 cm from the butt. To find the swingweight about the axis used on the stroke requires application of the Parallel Axis Theorem. </p>
+			<p> Swingweight, also known as moment of inertia and rotational inertia, is the resistance to change in the speed of the rotation about the axis of rotation. High swingweight means that the racquet is hard to get rotating, but once it gets going it will not be pushed around so much on impact with the ball and will tend to produce better pace and spin. Swingweight is the infinite sum of all infinitely small mass elements times the square of their distance from the axis of rotation. Or in mathematical terms, </p>
+			<blockquote> 
+				<blockquote> 
+					<p><img src="/_assets/img/parall1.gif" alt="wpe1.gif (1237 bytes)" width="191"></p>
+				</blockquote>
+			</blockquote>
+			<p> Call the known swingweight <b>I</b> (the published RDC measurement) and the unknown swingweight (about the axis of rotation used in the stroke) will be called <b>I'</b>. The swingweight of the racquet about its mass center will be called <b>I<sub>c</sub></b>. The distance of the mass center (balance point of the racquet) from the axis of rotation for the known swingweight is <b>r</b>, and the racquet mass is <b>M</b>. Note that the published mass center radius is measured from the balance point to the butt end, not to the axis of rotation which is 10 cm from the butt end. The distance of the mass center from the new axis of rotation is <b>r + x</b>.</p>
+			<p> The Parallel Axis Theorem (from first year physics) tells us that the swingweight is the sum of the swingweight about the mass center (<b>I<sub>c</sub></b>) plus the product of the mass (M) and the square of the distance (r) from the axis of rotation to the mass center. </p>
+			<p> I = I<sub>c</sub> + Mr&sup2;</p>
+			<p>So once we know the RDC swingweight about the 10 cm axis, we can find the swingweight about any other parallel axis by another application of the Parallel Axis Theorem. The first step is finding the swingweight about an axis through the mass center (I<sub>c</sub>). </p>
+			<blockquote> 
+				<blockquote> 
+					<p>I = I<sub>c</sub> + Mr&sup2;</p>
+				</blockquote>
+				<blockquote> 
+					<p>=&gt; I<sub>c</sub> = I - Mr&sup2;</p>
+				</blockquote>
+			</blockquote>
+			<p>The same holds for the unknown swingweight, which is about a parallel axis that is a distance r + x from the mass center: </p>
+			<blockquote> 
+				<blockquote> 
+					<p>I' = I<sub>c</sub> + M(r + x)&sup2;</p>
+				</blockquote>
+			</blockquote>
+			<p>Now substitute what we've already found is equal to <b>I<sub>c</sub></b>:</p>
+			<blockquote> 
+				<blockquote> 
+					<p>I' = (I - Mr&sup2;) + M(r + x)&sup2;</p>
+				</blockquote>
+			</blockquote>
+			<p> = (I - Mr&sup2;) + M(r&sup2; + 2rx + x&sup2;) </p>
+			<p>Simplifying, we get a general formula for finding the unknown swingweight (I') about a different axis (r + x):</p>
+		</blockquote>
+		<p class="text-center">I' = I + M(2rx + x&sup2;)</p>
+		<blockquote> 
+			<p>For the First Benchmark Condition (groundstroke), the axis of rotation for the stroke is at 7 cm from the handle end, so x is 3. And in the Second Benchmark Condition (serve), the axis is even farther away, and x is 5. The variable r is the published balance point minus 10 cm, but in our formulas we use r, which is the published balance point minus 7 or 5 cm according to which benchmark condition we are using, so we need to substitute in the above formula so we can use r instead of r. We will use another variable (a) to denote the axis used. So:</p>
+			<p> x = 10 - a </p>
+			<p> r = r + (10 - a) =&gt; r = r - (10 - a)</p>
+			<p>When we substitute in the above formula, we get:</p>
+			<p>I' = I + M(2rx + x&sup2;) = I + M[2(r - (10 - a))(10 - a) + (10 - a)&sup2;]</p>
+			<p>Now simplifying the expression in the brackets:</p>
+			<p>[2(r - (10 - a))(10 - a) + (10 - a)&sup2;] </p>
+			<p>= -2ar + 20a - 2a&sup2; + 20r - 200 + 20a + 100 - 20a + a&sup2;</p>
+			<p>= -2ar + 20a - a&sup2; + 20r - 100</p>
+			<p>= 20r - 2ar - 100 + 20a - a&sup2;</p>
+			<p>= 2r(10 - a) - (10 - a)&sup2;</p>
+			<p>So in the formulas, the variable I, which represents the swingweight about the axis used on the stroke, where a is the distance from the butt to the axis, I<sub>10</sub> is the RDC swingweight about the axis 10 cm from the butt, and r is the distance in cm from the mass center (balance point) to the axis used in the stroke:</p>
+			<p>I = I<sub>a</sub> = I<sub>10</sub> + M*[2*(10 - a)*r - (10 - a)^2]</p>
+			<p>a = distance in cm from the butt to the axis of rotation used in the stroke 
+				I<sub>10</sub> = RDC swingweight in kg&middot;cm&sup2; about an axis 10 cm from the butt 
+				r = distance in cm from mass center (balance point) to axis used in the stroke</p>
+		</blockquote>
+	</td>
+</tr>
+</table>
+<!-- #bbinclude "footer.incl" -->
+<!-- begin footer.incl -->
+
+<!-- begin navbar.incl -->
+    </div><!-- /.col-md-9 -->
+	<div class="col-md-3">
+		<ul class="nav nav-pills nav-stacked">
+			<li> <a href="/about_this_site.html">About this Site</a> </li>
+			<li> <a href="/sevencri.html">Introduction to Racquet Science</a> </li>
+			<li> <a href="/idiots_guide.html">Complete Idiot's Guide to Choosing a Racquet</a> </li>
+			<li> <a href="/faq.html">Frequently Asked Questions (FAQ)</a> </li>
+			<li> <a href="/formulas.html">Formulas for Evaluation of Racquet Performance</a> </li>
+			<li> <a href="/derivations.html">Derivations of Formulas</a> </li>
+			<li> <a href="/2002/index.html">Racquet Rankings</a> </li>
+			<li> <a href="/2002/Mfr.html">Racquet Performance by Manufacturer</a> </li>
+			<li> <a href="/2002/Specs.html">Specs of Current Racquets</a> </li>
+			<li> <a href="/Discontinued.html">Specs of Discontinued Racquets</a> </li>
+			<li> <a href="/balancetip.html">Customizing Balance</a> </li>
+			<li> <a href="/customizing.html">Matching Racquets</a> </li>
+			<li> <a href="/CounterweightingEffect.html">Tailweighted Hammer Tops All Other Racquets</a> </li>
+			<li> <a href="/site.html">Site Contents</a> </li>
+			<li> <a href="/directory.html">Site Directory</a> </li>
+			<li> <a href="/links.html">Links</a> </li>
+			<li> <a href="/whatsnew.html">What's New</a> </li>
+			<li> <a href="/index.html">Home Page</a> </li>
+		</ul>
+	</div><!-- /.col-md-3 -->
+<!-- end navbar.incl -->
+
+	</div><!-- /.row -->
+</div><!-- /.container-fluid -->
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<!-- end footer.incl -->
+<!-- end bbinclude -->
+</body>
+</html>

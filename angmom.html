@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-US">
+<head>
+    <title>Conservation of Angular Momentum</title><!-- #bbinclude "meta.incl" -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<meta name="description" content="Racquet evaluation and ranking by physics re tennis elbow.">
+<meta name="keywords" content="tennis, tennis elbow, racket, racquet, shock, torque, shoulder, eccentric impact, coefficient of restitution, conservation of momentum">
+<link rel="stylesheet" href="/_assets/css/rr.css" type="text/css" media="screen">
+<!-- end of meta content -->
+<!-- end bbinclude -->
+</head>
+<body id="top">
+                    <h2>Conservation of Angular Momentum</h2>
+                <p>Momentum is the product of inertia and velocity. Inertia means the tendency of something not to change, and velocity means how fast it moves. So momentum means the tendency of an object in motion not to slow down. Momentum is of two kinds, angular and linear. Both kinds of momentum are conserved in any collision. Conservation means that none is lost, so the total momentum of the system before the collision, plus any additional impulse from outside the system, will equal the total momentum after the collision. This conservation principle is key to deriving formulas.</p>
+                <p>Angular momentum is the tendency of a rotating object to keep rotating at the same speed about the same axis of rotation. Angular momentum is measured with respect to a certain axis of rotation. The axis of rotation we will use is the axis at the middle of the hand, between the ring and middle fingers, perpendicular to the ground, and through the racquet handle.</p>
+                <p>By means of the conservation principle, it's possible to write a before and after equation for angular momenta about this axis of rotation. Here's how it works for a tennis racquet hitting a ball:</p>
+                <p>The racquet has a swingweight (moment of inertia, or rotational inertia, denoted by the symbol <strong><em>I</em></strong>). In rotation about the axis of rotation, the racquet also has an angular velocity (symbol w), measured in radians per second (a radian is about 1/6 of a full circle -- there are 2pi radians in a full circle). Together, these variables define the racquet's angular momentum.</p>
+                <p>The angular momentum of the racquet, Iw, is its tendency to keep rotating about the axis of rotation despite the impact of the ball. Let's call the angular velocity of the racquet about the axis of rotation before the collision w<sub>1</sub> and after the collision w<sub>2</sub>. The angular velocity of the racquet will slow down due to the collision, but racquet swingweight stays the same.</p>
+                <p>The angular momentum of the ball is a little more difficult to understand. It's not the spin of the ball in flight, but the angular momentum about the axis of rotation in the hand. The ball has a mass and a velocity, therefore it has a linear momentum. The impact point on the racquet will be a certain distance (d) from the axis of rotation. Angular momentum of the ball is the product of linear momentum times distance from the axis of rotation. So the angular momentum of the ball with respect to the axis of rotation is its mass (b) times its velocity (s) times the distance of the impact point from the axis of rotation (d).</p>
+                <p>We can, in this case, <a id="disregard" id="disregard"></a>disregard external forces such as the force applied by the player's hand during impact when writing the equation describing conservation of angular momentum. This is an important assumption, so some argument is in order:</p>
+                <blockquote>
+                    <p>The line of action of all angular momenta is the same, the axis of rotation at the middle of the hand. And the line of action of any Impulse Reaction (push or pull of the player) passes through the axis of rotation, so this force, although impulsive, does not contribute to angular momentum. The external force we would like to disregard is the turning force, or torque, put in by the player during the impact. If it is a non-impulsive force, we can disregard it. This player torque is what has generated the racquet's angular velocity w<sub>1</sub> right before the impact begins, and a few milliseconds more (0.004 seconds under our two Benchmark Conditions) of its operation will not materially change w. Any torque is the product of swingweight I and angular acceleration a about the axis of rotation, torque = Ia. Any actual change in the racquet's angular velocity w due to this torque will be small because the angular acceleration has such a short time to operate, so any additional angular angular momentum Iw will be negligibly small. The racquet head will not greatly change its position in 4 microseconds. The resultant Torque from impact, which acts to twist the racquet back, will be found later once the change (w<sub>1</sub> - w<sub>2</sub>) in the racquet's angular velocity due to impact is found.</p>
+                </blockquote>
+                <p>As noted before, the axis of rotation is between the ring and middle fingers of the hand holding the racquet. With respect to this axis, we can write an equation that is expressed in words like this:</p>
+                <blockquote>
+                    <p>angular momentum of racquet before collision (Iw<sub>1</sub>)</p>
+                </blockquote>
+                <blockquote>
+                    <blockquote>
+                        <p>plus</p>
+                    </blockquote>
+                </blockquote>
+                <blockquote>
+                    <p>angular momentum of ball before collision (bs<sub>1</sub>d)</p>
+                </blockquote>
+                <p>equals</p>
+                <blockquote>
+                    <p>angular momentum of racquet after collision (Iw<sub>2</sub>)</p>
+                </blockquote>
+                <blockquote>
+                    <blockquote>
+                        <p>plus</p>
+                    </blockquote>
+                </blockquote>
+                <blockquote>
+                    <p>angular momentum of ball after collision (bs<sub>2</sub>d)</p>
+                </blockquote>
+                <p>In symbolic shorthand: (Iw<sub>1</sub>) + (bs<sub>1</sub>d) = (Iw<sub>2</sub>) + (bs<sub>2</sub>d)</p>
+                <p>With algebra, we can get an expression for the difference in angular velocity before and after the collision:</p>
+                <p>(Iw<sub>1</sub>) + (bs<sub>1</sub>d) = (Iw<sub>2</sub>) + (bs<sub>2</sub>d)</p>
+                <p>(Iw<sub>1</sub>) - (Iw<sub>2</sub>) = (bs<sub>2</sub>d) - (bs<sub>1</sub>d)</p>
+                <p>(w<sub>1</sub> - w<sub>2</sub>) = (bd/I)(s<sub>2</sub> - s<sub>1</sub>)</p>
+                <p>This angular velocity difference is key to finding a formula for Torque, Shock, Work, and Shoulder Pull. The ball velocities and the distance of the impact point from the axis of rotation are set by the Benchmark Condition, but the formulas are generalized so that any ball speed and any impact point may be used.</p>
+            </td>
+        </tr>
+    </table>
+<!-- #bbinclude "footer.incl" -->
+<!-- begin footer.incl -->
+
+<!-- begin navbar.incl -->
+    </div><!-- /.col-md-9 -->
+	<div class="col-md-3">
+		<ul class="nav nav-pills nav-stacked">
+			<li> <a href="/about_this_site.html">About this Site</a> </li>
+			<li> <a href="/sevencri.html">Introduction to Racquet Science</a> </li>
+			<li> <a href="/idiots_guide.html">Complete Idiot's Guide to Choosing a Racquet</a> </li>
+			<li> <a href="/faq.html">Frequently Asked Questions (FAQ)</a> </li>
+			<li> <a href="/formulas.html">Formulas for Evaluation of Racquet Performance</a> </li>
+			<li> <a href="/derivations.html">Derivations of Formulas</a> </li>
+			<li> <a href="/2002/index.html">Racquet Rankings</a> </li>
+			<li> <a href="/2002/Mfr.html">Racquet Performance by Manufacturer</a> </li>
+			<li> <a href="/2002/Specs.html">Specs of Current Racquets</a> </li>
+			<li> <a href="/Discontinued.html">Specs of Discontinued Racquets</a> </li>
+			<li> <a href="/balancetip.html">Customizing Balance</a> </li>
+			<li> <a href="/customizing.html">Matching Racquets</a> </li>
+			<li> <a href="/CounterweightingEffect.html">Tailweighted Hammer Tops All Other Racquets</a> </li>
+			<li> <a href="/site.html">Site Contents</a> </li>
+			<li> <a href="/directory.html">Site Directory</a> </li>
+			<li> <a href="/links.html">Links</a> </li>
+			<li> <a href="/whatsnew.html">What's New</a> </li>
+			<li> <a href="/index.html">Home Page</a> </li>
+		</ul>
+	</div><!-- /.col-md-3 -->
+<!-- end navbar.incl -->
+
+	</div><!-- /.row -->
+</div><!-- /.container-fluid -->
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<!-- end footer.incl -->
+<!-- end bbinclude -->
+</body>
+</html>
