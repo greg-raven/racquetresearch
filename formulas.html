@@ -2,15 +2,14 @@
 <html lang="en-US">
 <head>
 	<title>Formulas for Racquet Performance Evaluation</title>
-
 <!-- #bbinclude "meta.incl" -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-<meta name="description" content="Racquet evaluation and ranking by physics re tennis elbow.">
-<meta name="keywords" content="tennis, tennis elbow, racket, racquet, shock, torque, shoulder, eccentric impact, coefficient of restitution, conservation of momentum">
-<link rel="stylesheet" href="/_assets/css/rr.css" type="text/css" media="screen">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<meta name="description" content="Racquet evaluation and ranking by physics re tennis elbow.">
+	<meta name="keywords" content="tennis, tennis elbow, racket, racquet, shock, torque, shoulder, eccentric impact, coefficient of restitution, conservation of momentum">
+	<link rel="stylesheet" href="/_assets/css/rr.css" type="text/css" media="screen">
 <!-- end of meta content -->
 <!-- end bbinclude -->
 </head>
@@ -18,100 +17,130 @@
 <!-- #bbinclude "header.incl" -->
 <!-- begin header.incl -->
 <div class="container-fluid">
-    <header>
-      <div class="page-header">
-        <h1> RACQUET SCIENCE <small>using physics to help select a racquet</small> </h1>
-      </div>
-    </header>
-    <div class="row">
-        <div class="col-md-9">
+	<header>
+		<div class="page-header">
+			<h1>
+				RACQUET SCIENCE <small>&mdash; using physics to help select a racquet</small>
+			</h1>
+		</div>
+	</header>
+	<div class="row">
+		<div class="col-md-9">
 <!-- end header.incl -->
 <!-- end bbinclude -->
-			<h2>Formulas for Evaluation of Racquet Performance</h2>
-			<p>Derivations of these Formulas:</p>
-			<table border="1" cellpadding="3" cellspacing="3">
-			<tr> 
-				<td align="center"><a href="torque_formula.html">Torque</a></td>
-				<td align="center"><a href="Impulse.html">Impulse Reaction</a></td>
-				<td align="center"><a href="shock_formula.html">Shock</a></td>
-				<td align="center"><a href="work_formula.html">Work</a></td>
-				<td align="center"><a href="shoulder_pull.html">Shoulder Pull</a></td>
-				<td align="center"><a href="impact_force.html">Impact Force</a></td>
-			</tr>
-			</table>
-			<p><a href="derivations.html">Remarks on Formula Derivations</a></p>
-			<p><img src="/_assets/img/formul1.gif" alt="wpe3.gif (6900 bytes)" width="532" height="288"></p>
-			<p>Sweet Spot (Center of Percussion) (cm from axis of rotation) 
-				= <i>I / </i>(<i>M*r</i> ) <a href="derivations.html#Sweet_Spot">Derivation</a></p>
-			<p>Moment (Newton.meters about axis of rotation) 
-				= <i>M</i>*(<i>r</i>/100)*(9.81) <a href="derivations.html#Moment">Derivation</a></p>
-			<p><img src="/_assets/img/Image25.gif" width="406" height="81" alt="">  
-				 
-				 
-				 
+			<h2>
+				Formulas for Evaluation of Racquet Performance
+			</h2>
+			<p>
+				Derivations of these Formulas:
 			</p>
-			<p>Torsion, or Longitudinal Torque 
-				= Moment * Torque <a href="derivations.html#Longitudinal_Torque">Derivation</a></p>
-			<p><img src="/_assets/img/formul2.gif" alt="wpe1.gif (2208 bytes)" width="498" height="65"></p>
-			<p><img src="/_assets/img/Image28.gif" width="786" height="84" alt=""></p>
-			<p><img src="/_assets/img/Image27.gif" width="638"  border="0" height="103" alt=""></p>
-			<p> </p>
-			<p> </p>
-			<p><i><img src="/_assets/img/Image26.gif" width="848"  border="0" height="103" alt=""></i> 
-				 
-				Shoulder Crunch (Newtons) 
-				= (2/(0.01<i>*r</i> + 0.61))*(<i>Shock</i>) <a href="derivations.html#Shoulder_Yank">Derivation</a></p>
-			<p>Elbow Crunch (Newtons) 
-				= (2/(0.01<i>*r</i> + 0.36))*(<i>Shock</i>) <a href="derivations.html#Elbow_Yank">Derivation</a></p>
-			<p>Wrist Crunch (Newtons) 
-				= (2/(0.01<i>*r</i> + 0.08))*(<i>Shock</i>)</p>
-			<p>Tip Speed (m/s) = ((2/M) * (Work) * (e / r)^2)^&frac12;  
-				e = distance from axis to tip, in cm <a href="derivations.html#Tip_Speed"> Derivation</a></p>
-			<p>Impact Force (Newtons acting at mass center due to impact) 
-				= (M / t)*{(1 + c)*[(2/M)*(Work)]<sup><sup>&frac12;</sup></sup> - (r/d)*(cs<sub>1</sub> + s<sub>2</sub>)} <a href="impact_force.html">Derivation</a></p>
-			<hr> 
-			<p>Parallel Axis Theorem for converting RDC swingweight (I<sub>10</sub>) to swingweight about the axis specified for the benchmark condition (I<sub>7</sub> or I<sub>5</sub>, or I<sub>a</sub> which is the I used in the foregoing formulas):</p>
-			<p>I = I<sub>a</sub> = I<sub>10</sub> + M*[2*(10 - a)*r - (10 - a)&sup2;]  
-				<a href="parallel.html">Derivation</a></p>
-			<hr> 
-			<p>New Balance Point distance (x) from original balance point, resulting from adding weight (m) at a distance (y) from the original balance point of a racquet having an original weight (M). </p>
-			<p>x = y * (m / (M + m)) <a href="derivations.html#new_balance_point">Derivation</a></p>
-	</td>
-</tr>
-</table>
+			<table class="table">
+				<tr>
+					<td><a href="torque_formula.html">Torque</a></td>
+					<td><a href="Impulse.html">Impulse Reaction</a></td>
+					<td><a href="shock_formula.html">Shock</a></td>
+					<td><a href="work_formula.html">Work</a></td>
+					<td><a href="shoulder_pull.html">Shoulder Pull</a></td>
+					<td><a href="impact_force.html">Impact Force</a></td>
+				</tr>
+			</table>
+			<p>
+				<a href="derivations.html">Remarks on Formula Derivations</a>
+			</p>
+			<p>
+				<img src="/_assets/img/formul1.gif" alt="wpe3.gif (6900 bytes)" width="532" height="288">
+			</p>
+			<p>
+				Sweet Spot (Center of Percussion) (cm from axis of rotation) = <i>I / </i>(<i>M*r</i> ) <a href="derivations.html#Sweet_Spot">Derivation</a>
+			</p>
+			<p>
+				Moment (Newton.meters about axis of rotation) = <i>M</i>*(<i>r</i>/100)*(9.81) <a href="derivations.html#Moment">Derivation</a>
+			</p>
+			<p>
+				<img src="/_assets/img/Image25.gif" width="406" height="81" alt="">
+			</p>
+			<p>
+				Torsion, or Longitudinal Torque = Moment * Torque <a href="derivations.html#Longitudinal_Torque">Derivation</a>
+			</p>
+			<p>
+				<img src="/_assets/img/formul2.gif" alt="wpe1.gif (2208 bytes)" width="498" height="65">
+			</p>
+			<p>
+				<img src="/_assets/img/Image28.gif" width="786" height="84" alt="">
+			</p>
+			<p>
+				<img src="/_assets/img/Image27.gif" width="638" border="0" height="103" alt="">
+			</p>
+			<p>
+			</p>
+			<p>
+			</p>
+			<p>
+				<i><img src="/_assets/img/Image26.gif" width="848" border="0" height="103" alt=""></i> Shoulder Crunch (Newtons) = (2/(0.01<i>*r</i> + 0.61))*(<i>Shock</i>) <a href="derivations.html#Shoulder_Yank">Derivation</a>
+			</p>
+			<p>
+				Elbow Crunch (Newtons) = (2/(0.01<i>*r</i> + 0.36))*(<i>Shock</i>) <a href="derivations.html#Elbow_Yank">Derivation</a>
+			</p>
+			<p>
+				Wrist Crunch (Newtons) = (2/(0.01<i>*r</i> + 0.08))*(<i>Shock</i>)
+			</p>
+			<p>
+				Tip Speed (m/s) = ((2/M) * (Work) * (e / r)^2)^&frac12; e = distance from axis to tip, in cm <a href="derivations.html#Tip_Speed"> Derivation</a>
+			</p>
+			<p>
+				Impact Force (Newtons acting at mass center due to impact) = (M / t)*{(1 + c)*[(2/M)*(Work)]<sup><sup>&frac12;</sup></sup> - (r/d)*(cs<sub>1</sub> + s<sub>2</sub>)} <a href="impact_force.html">Derivation</a>
+			</p>
+			<hr>
+			<p>
+				Parallel Axis Theorem for converting RDC swingweight (I<sub>10</sub>) to swingweight about the axis specified for the benchmark condition (I<sub>7</sub> or I<sub>5</sub>, or I<sub>a</sub> which is the I used in the foregoing formulas):
+			</p>
+			<p>
+				I = I<sub>a</sub> = I<sub>10</sub> + M*[2*(10 - a)*r - (10 - a)&sup2;] <a href="parallel.html">Derivation</a>
+			</p>
+			<hr>
+			<p>
+				New Balance Point distance (x) from original balance point, resulting from adding weight (m) at a distance (y) from the original balance point of a racquet having an original weight (M).
+			</p>
+			<p>
+				x = y * (m / (M + m)) <a href="derivations.html#new_balance_point">Derivation</a>
+			</p>
 <!-- #bbinclude "footer.incl" -->
 <!-- begin footer.incl -->
-
 <!-- begin navbar.incl -->
-    </div><!-- /.col-md-9 -->
-	<div class="col-md-3">
-		<ul class="nav nav-pills nav-stacked">
-			<li> <a href="/about_this_site.html">About this Site</a> </li>
-			<li> <a href="/sevencri.html">Introduction to Racquet Science</a> </li>
-			<li> <a href="/idiots_guide.html">Complete Idiot's Guide to Choosing a Racquet</a> </li>
-			<li> <a href="/faq.html">Frequently Asked Questions (FAQ)</a> </li>
-			<li> <a href="/formulas.html">Formulas for Evaluation of Racquet Performance</a> </li>
-			<li> <a href="/derivations.html">Derivations of Formulas</a> </li>
-			<li> <a href="/2002/index.html">Racquet Rankings</a> </li>
-			<li> <a href="/2002/Mfr.html">Racquet Performance by Manufacturer</a> </li>
-			<li> <a href="/2002/Specs.html">Specs of Current Racquets</a> </li>
-			<li> <a href="/Discontinued.html">Specs of Discontinued Racquets</a> </li>
-			<li> <a href="/balancetip.html">Customizing Balance</a> </li>
-			<li> <a href="/customizing.html">Matching Racquets</a> </li>
-			<li> <a href="/CounterweightingEffect.html">Tailweighted Hammer Tops All Other Racquets</a> </li>
-			<li> <a href="/site.html">Site Contents</a> </li>
-			<li> <a href="/directory.html">Site Directory</a> </li>
-			<li> <a href="/links.html">Links</a> </li>
-			<li> <a href="/whatsnew.html">What's New</a> </li>
-			<li> <a href="/index.html">Home Page</a> </li>
-		</ul>
-	</div><!-- /.col-md-3 -->
+		</div>
+<!-- /.col-md-9 -->
+		<nav class="col-md-3">
+			<ul class="nav nav-pills nav-stacked">
+				<li><a href="/about_this_site.html">About this Site</a></li>
+				<li><a href="/sevencri.html">Introduction to Racquet Science</a></li>
+				<li><a href="/idiots_guide.html">Complete Idiot&rsquo;s Guide to Choosing a Racquet</a></li>
+				<li><a href="/faq.html">Frequently Asked Questions (FAQ)</a></li>
+				<li><a href="/formulas.html">Formulas for Evaluation of Racquet Performance</a></li>
+				<li><a href="/derivations.html">Derivations of Formulas</a></li>
+				<li><a href="/2002/index.html">Racquet Rankings</a></li>
+				<li><a href="/2002/Mfr.html">Racquet Performance by Manufacturer</a></li>
+				<li><a href="/2002/Specs.html">Specs of Current Racquets</a></li>
+				<li><a href="/Discontinued.html">Specs of Discontinued Racquets</a></li>
+				<li><a href="/balancetip.html">Customizing Balance</a></li>
+				<li><a href="/customizing.html">Matching Racquets</a></li>
+				<li><a href="/CounterweightingEffect.html">Tailweighted Hammer Tops All Other Racquets</a></li>
+				<li><a href="/site.html">Site Contents</a></li>
+				<li><a href="/directory.html">Site Directory</a></li>
+				<li><a href="/links.html">Links</a></li>
+				<li><a href="/whatsnew.html">What&rsquo;s New</a></li>
+				<li><a href="/index.html">Home Page</a></li>
+			</ul>
+		</nav>
+<!-- /.col-md-3 -->
 <!-- end navbar.incl -->
-
-	</div><!-- /.row -->
-</div><!-- /.container-fluid -->
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	</div>
+<!-- /.row -->
+</div>
+<!-- /.container-fluid -->
+<script src="http://code.jquery.com/jquery-3.2.1.min.js">
+</script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+</script>
 <!-- end footer.incl -->
 <!-- end bbinclude -->
 </body>

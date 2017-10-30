@@ -2,13 +2,13 @@
 <html lang="en-US">
 <head>
 <!-- #bbinclude "meta.incl" -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-<meta name="description" content="Racquet evaluation and ranking by physics re tennis elbow.">
-<meta name="keywords" content="tennis, tennis elbow, racket, racquet, shock, torque, shoulder, eccentric impact, coefficient of restitution, conservation of momentum">
-<link rel="stylesheet" href="/_assets/css/rr.css" type="text/css" media="screen">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<meta name="description" content="Racquet evaluation and ranking by physics re tennis elbow.">
+	<meta name="keywords" content="tennis, tennis elbow, racket, racquet, shock, torque, shoulder, eccentric impact, coefficient of restitution, conservation of momentum">
+	<link rel="stylesheet" href="/_assets/css/rr.css" type="text/css" media="screen">
 <!-- end of meta content -->
 <!-- end bbinclude -->
 	<title>Introduction to Racquet Science</title>
@@ -17,340 +17,332 @@
 <!-- #bbinclude "header.incl" -->
 <!-- begin header.incl -->
 <div class="container-fluid">
-    <header>
-      <div class="page-header">
-        <h1> RACQUET SCIENCE <small>using physics to help select a racquet</small> </h1>
-      </div>
-    </header>
-    <div class="row">
-        <div class="col-md-9">
+	<header>
+		<div class="page-header">
+			<h1>
+				RACQUET SCIENCE <small>&mdash; using physics to help select a racquet</small>
+			</h1>
+		</div>
+	</header>
+	<div class="row">
+		<div class="col-md-9">
 <!-- end header.incl -->
 <!-- end bbinclude -->
-<div class="col-md-9">
-	<h2>
-		Introduction to Racquet Science
-	</h2>
-	<h3>
-		<a id="Objective">Objective</a> Evaluation Concepts and Answers to Frequently Asked Questions
-	</h3>
-	<p>
-		Here's an interesting question: why don't the touring pros use the same racquets that their sponsors sell to the public? The pros heavily customize to add mass and swingweight, even though the paint job would lead you to believe that they are playing with the same racquet you can buy. Why is such a fix necessary?
-	</p>
-	<p>
-		It has been estimated that half of all players over 30 suffer from tennis elbow. So it's important to have good information because the consequences of a bad racquet choice are worse than the waste of $300. But how can a player make an informed choice? Racquet ads are not very informative, and often deliberately misleading. You can't rely on what the pros pretend to use. Playtests depend on the personal opinion of the testers, and like all subjective tests are suspect for obvious reasons.
-	</p>
-	<p>
-		What's needed is a set objective performance criteria, some quantifiable and meaningful terms instead of ad hype and subjective playtests. Here are some scientific concepts and real <a id="performance_criteria">performance criteria</a> for tennis racquets:
-	</p>
-	<ul>
-		<li><a href="#Sweet_Spot">Sweet Spot</a></li>
-		<li><a href="#Moment">Moment</a></li>
-		<li><a href="#Torque">Torque</a></li>
-		<li><a href="#Longitudinal_Torque">Torsion</a></li>
-		<li><a href="#Polar_Moment">Polar Moment</a></li>
-		<li><a href="#Impulse_Reaction">Impulse Reaction</a></li>
-		<li><a href="#Shock">Shock</a></li>
-		<li><a href="#Work">Work</a></li>
-		<li><a href="#Shoulder_Pull">Shoulder Pull</a></li>
-		<li><a href="#Shoulder_Crunch">Shoulder Crunch</a></li>
-		<li><a href="#Elbow_Crunch">Elbow Crunch</a></li>
-		<li><a href="#Wrist_Crunch">Wrist Crunch</a></li>
-		<li><a href="#Impact_Impulse">Impact Force</a> </li>
-	</ul>
-	<p>
-		Other commonly used criteria:
-	</p>
-	<ul>
-		<li><a href="#Power">Power</a></li>
-		<li><a href="#Maneuverability">Maneuverability</a></li>
-		<li><a href="#Control">Control</a> </li>
-	</ul>
-	<h3>
-		Evaluation Criteria for Racquet Performance
-	</h3>
-	<p>
-		1. The <a id="Sweet_Spot"></a>Sweet Spot is known to cognoscenti as the &quot;center of percussion.&quot; It is dependent on the location of the <a href="axis_of_rotation.html">axis of rotation</a> at the hand in the stroke (see <a href="derivations.html#Those">formula for sweet spot location)</a>. A high sweet spot, i.e. a center of percussion close to the tip of the racquet is good because it means low Impact Force. See <a href="2002/Criteria_Rankings/sweetspot.html">Sweet Spot Rankings</a> for the 2002 survey of 167 racquets.
-	</p>
-	<p>
-		The sweet spot is a point, not an area, although some refer to the &quot;sweet spot&quot; on the racquet being &quot;large.&quot; Another alias for the center of percussion is &quot;center of oscillation.&quot; The &quot;sweet&quot; area on the string bed is where the racquet's bounce is maximized, and this has nothing to do with the center of percussion.
-	</p>
-	<p>
-		The sweet spot is determinative of the force from impact: the higher the sweet spot, the lower the Impact Force acting at the racquet's mass center, and the more positive the Impulse Reaction at the hand. If the balance is close to the hand, this will also mean low Torque and therefore less stress on the arm.
-	</p>
-	<p>
-		Generally speaking, the higher the sweet spot on the racquet face (i.e. the longer the distance (q) from the hand to the sweet spot) the better. However, because racquets are of different lengths, it is misleading to compare q values directly, because q is the distance of the center of percussion from the axis of rotation, and for a long racquet a high q may still mean a low sweet spot. So what counts is the distance of the sweet spot from the tip. The formula for finding the center of percussion on any racquet is
-	</p>
-	<p class="text-center">
-		<b><i>q = I / Mr</i></b>
-	</p>
-	<p>
-		[q is the distance in centimeters from the <a href="axis_of_rotation.html">axis of rotation</a> to the center of percussion; <b><i>M</i></b> is racquet mass in kilograms;<b><i> r</i></b> is the distance in centimeters from the axis of rotation to the mass center, or balance point, of the racquet; and <b><i>I</i></b> is racquet swingweight about the axis of rotation (also known as moment of inertia or rotational inertia or Second Moment) in the units measured on the Babolat Racquet Diagnostic Center (kg&middot;cm&sup2;). The axis of rotation is 7 cm from the handle end on the forehand, 5 cm on the serve, and the Babolat RDC measures swingweight about an axis 10 cm from the handle end, so the RDC swingweight must be converted using the <a href="parallel.html">Parallel Axis Theorem</a>].
-	</p>
-	<hr>
-	<p>
-		2. <a id="Moment">Moment</a> is the turning force pivoting the racquet head down when you hold the racquet parallel to the ground. Moment, in Newton.meters, is a measure of how heavy the racquet feels to hold up parallel to the ground (not merely the weight of the racquet, but this weight multiplied by its lever arm).
-	</p>
-	<p>
-		Moment should be especially important for juniors and ladies. A light racquet having a balance point far from the hand may have a larger Moment than a heavy racquet with a head-light balance, so merely knowing the weight of a racquet is not enough, and may be misleading.
-	</p>
-	<p>
-		It is deplorable that ignorant consumers are being enticed to buy dangerous racquets by misleading sales ploys like inviting them to pick up the racquet by the wrong end to see how light it is. This &quot;pick up appeal&quot; pitch is causing tennis to lose players and popularity at an alarming rate. What counts is Moment, not weight. Moment is the racquet's weight times its lever arm, which is the distance to the balance point from the axis of rotation (this axis is at the middle of the hand, 7 cm from the handle end). Weight in the metric system is the mass of the racquet, in kilograms, times the acceleration due to gravity (9.81 meters/s&sup2;), and the distance to the balance point is in meters. The unit of measure of torque is the Newton.meter (1 Newton.meter = 0.7375 foot pounds of torque = the same force you would feel holding a 3.6 ounce weight at the end of a meter stick). The lower the Moment, the better.
-	</p>
-	<p>
-		Moment is key for two reasons: (1) a racquet with a high Moment is bad because it is hard to hold up and to position for volleys and returns, especially for juniors and ladies; and (2) Moment multiplied by Torque gives the Torsion, which is the screwdriver twist about the racquet's handle centerline resulting from impacts, even impacts on the centerline. High Torsion is bad for tennis elbow. See the <a href="faq.html#id-tennis-elbow">discussion below</a> on tennis elbow. <a href="2002/Criteria_Rankings/moment_rankings.html">Moment Rankings</a> for the 2002 survey of 167 racquets.
-	</p>
-	<hr>
-	<p>
-		Torque and Impulse Reaction are the two &quot;<a id="resultant_forces"></a>resultant forces&quot; from an &quot;eccentric impact,&quot; such as the impact of a racquet with a ball. This is called an &quot;eccentric impact&quot; because the two mass centers (ball center and racquet balance point) do not move along the same line to a point of collision. When you hit the Sweet Spot, Impulse Reaction is zero, but there is still some Torque.
-	</p>
-	<p>
-		3. <a id="Torque"></a>Torque is a bending force resulting from impact, that causes the hand to bend back and then catapult forward. This torque is measured about <a href="axis_of_rotation.html">the axis of rotation</a> of the racquet in the stroke, which is 7 cm from the handle end on the forehand (First, Third, and Fourth Benchmark Conditions), and 5 cm on the serve (Second and Fifth Benchmark Conditions) -- approximately the middle finger location. Note that Torque is not the screwdriver twist of the handle (which will be called Torsion, or Longitudinal Torque), but the bending back of the racquet. (See <a href="formulas.html">formula for Torque</a>, see <a href="torque_formula.html">derivation of formula for Torque)</a>. Torque winds up a catapult in the wrist, which flings the racquet forward after the ball has gone. The stronger this catapulting force, the worse the whipsawing stress cycle resulting from the stroke, and thus the worse for <a href="faq.html#id-tennis-elbow">tennis elbow</a> -- so high Torque is bad.
-	</p>
-	<p>
-		Some loss of energy could be expected from the conversion of Torque into the subsequent forward catapulting force, due to absorption of Torque in the bending of the racquet frame and stretching of the muscles, so it will be difficult to quantify the catapult effect. Note, however, that a stiff racquet (high Flex number) will not absorb as much of this bending force, and therefore a stiff racquet is a risk factor for tennis elbow.
-	</p>
-	<p>
-		Expert players tend to prefer the slim, more flexible racquets, which absorb Torque in frame bending and thereby reduce the catapulting force that flings the racquet forward after impact. The &quot;widebody revolution&quot; (of the late 80's) never caught on among the pros, for good reason. Stiff racquets may be good for power, but they are bad for tennis elbow. Note that Torque depends on dwell time, and the shorter the dwell time the worse the Torque. Flexible racquets may have the advantage of increasing dwell time, although no proof of this is presently available.
-	</p>
-	<p>
-		Note that Torque is a different twisting force from Moment, although both are measured in the same metric torque unit (Newton.meters). The difference is in the axis of the twist. Moment is about an axis of rotation parallel to the ground, while Torque is about the axis determined by the path of the ball and the attitude of the racquet face (for ground strokes, an axis perpendicular to the ground). For all racquets, in all <a href="benchmarkconditions.html">benchmark conditions</a>, we assume an impact on the centerline with the racquet face perpendicular to the ground. <a href="2002/Criteria_Rankings/torque.html">Torque Rankings</a> for the 2002 survey of 167 racquets.
-	</p>
-	<hr>
-	<p>
-		4. Torsion or <a id="Longitudinal_Torque"></a>Longitudinal Torque is the screwdriver twisting force around an axis running up the handle. Such a force arises even from impacts on the centerline. This criterion is the cross product of Moment and Torque. As we assume a centerline hit in our calculations under both benchmark conditions, the additional screwdriver twist from an off-centerline hit is not evaluated. See the discussion below on <a href="faq.html#id-shoulder-weighting">whether weighting at 9 and 3 o'clock on the head is good</a>. Torsion from a centerline hit is simply the cross product (vector product) of Moment and Torque. That means you multiply Torque by Moment and then multiply by the sine of the angle between these two vectors. For groundstrokes (assuming the axis of rotation is perpendicular to the ground and the racquet is parallel to the ground), the angle is 90 degrees so the sine is 1. For the serve, there is no Torsion because there is no Moment when the racquet is pointing straight up.
-	</p>
-	<p>
-		Both high Moment and high Torque contribute to high Torsion. For a right-handed forehand, Torsion would be a twist in the clockwise direction. This twist winds up the racquet to release in a sudden handle twist in the opposite direction (counterclockwise) once the ball leaves. The magnitude of this second twist depends on racquet stiffness (stiff is bad).
-	</p>
-	<p>
-		Torsion also results from impacts off the centerline, the amount of torsion being the Impact Force (in Newtons) times the distance, in meters, from the centerline to the point of impact. For off-center impacts, a low Impact Force (i.e. a high Sweet Spot) is best.
-	</p>
-	<hr>
-	<p>
-		5. <a id="Impulse_Reaction"></a>Impulse Reaction is a push (positive Impulse Reaction) or pull (negative) on the axis of rotation (the hand) resulting from impact (see <a href="formulas.html">formula for Impulse Reaction</a>, also see <a href="Impulse.html">derivation of formula for Impulse Reaction</a>). Impacts above the center of percussion (Sweet Spot) result in a pull on the hand; below is a push. A positive Impulse Reaction is better because it means less Impact Force (the rankings of Impulse Reaction [positive good] and Impact Force are exactly the same).
-	</p>
-	<p>
-		Impulse Reaction is measured in units of force, because it is a translational force (straight ahead push or pull) on the <a href="axis_of_rotation.html">axis of rotation</a> (at the hand). The unit of measurement of force in the metric system is the Newton (1 Newton = 0.2248 pounds, or 3.6 ounces, of force). For impacts above the Sweet Spot (center of percussion), Impulse Reaction is a pull from the player to counter the yank on the hand (negative value). For impacts below the center of percussion, Impulse Reaction is a push against the hand (positive value). Right on the center of percussion (sweet spot), there is no Impulse Reaction at all (zero value).
-	</p>
-	<p>
-		Our directional convention is that positive is toward the net, so a pull is a negative Impulse Reaction. Positive is better than negative because positive Impulse Reaction adds more speed to the racquet during the impact, while negative Impulse Reaction tends to bring the head under the ball as it yanks the arm forward.
-	</p>
-	<p>
-		The Impulse Reaction rankings are the same as the rankings for Impact Force. The higher the sweet spot, the more positive (less negative) the Impulse Reaction, and the lower the Impact Force.
-	</p>
-	<hr>
-	<p>
-		6. <a id="Shock"></a>Shock loading of the racquet results from a sudden change in the racquet's <a href="kinetic.html">kinetic energy</a> on impact, which produces an internal energy load on the racquet, which is expressed as frame vibration. Shock also determines <a href="#Shoulder_Crunch">Shoulder Crunch</a>, <a href="#Elbow_Crunch">Elbow Crunch</a>, and <a href="#Wrist_Crunch">Wrist Crunch</a> (see <a href="formulas.html">formula for Shock,</a> see <a href="shock_formula.html">derivation of formula for Shock</a>). This change in kinetic energy is how much the racquet slows down when it slams into the ball, while kinetic energy is converted into internal or potential energy. Shock is measured in joules (the same metric unit as work, heat and energy). Although the term &quot;shock&quot; has no generally accepted definition in engineering, for our purposes we will call Shock the difference between the initial and final kinetic energy of the racquet. See <a href="shock_discussion.html">note</a>.
-	</p>
-	<p>
-		Before impact, you put energy into the racquet to get it up to speed for the collision, and during the impact you put in a little more energy to aim the shot. After the ball leaves, the racquet mass center (balance point) moves at a slower speed, and this means a loss of its kinetic energy (kinetic energy = &frac12; mass times velocity squared). The ball gets some of this lost energy (the same for all racquets under all benchmark conditions), and the rest becomes internal energy, wasted in bending the frame.
-	</p>
-	<p>
-		If the frame is stiff and light, the frame bending energy will not be absorbed by the material of the frame but will but will have to be dumped into the arm holding on to the racquet. Don't place any reliance on string buttons to save your arm. Damping gadgets on the strings are too small in mass to do much besides reduce residual string vibration, which is a minor annoyance, and damping gadgets in the frame must be expected to handle an energy load of the magnitude determined by the design of the racquet.
-	</p>
-	<p>
-		The most effective vibration damper is a large particulate handle end weight (e.g. a bag of shot or sand), which serves to divert and dissipate the energy. Also effective at vibration damping is the Pro Kennex Kinetic system, which has particulate weights in the racquet head, and the Wilson Triad system, which absorbs the energy in special frame joints.
-	</p>
-	<p>
-		Better than damping is prevention of Shock by proper weight distribution in the racquet (head-light and heavy overall).
-	</p>
-	<p>
-		High Shock is bad also because it means high <a href="#Wrist_Crunch">Wrist Crunch</a>, <a href="#Elbow_Crunch">Elbow Crunch</a>, and <a href="#Shoulder_Crunch">Shoulder Crunch</a>. That is so because the formulas for these criteria derive from Shock. See the <a href="2002/Criteria_Rankings/shock.html">Shock Rankings</a> for the 2002 survey of 167 racquets.
-	</p>
-	<hr>
-	<p>
-		7. <a id="Work">Work</a> is the energy required to produce a certain ball speed with the racquet (see <a href="formulas.html">formula for Work</a>, see <a href="work_formula.html">derivation of formula for Work</a>). Work measures the energy efficiency of the racquet, so low Work is good. High Work is bad because the player has to swing harder to get the same result. Work quantifies a racquet's power: the less work the player has to put in to get the required ball speed in the allotted time for the stroke, the more powerful the racquet. Of course, a player may put in lots of effort and get lots of ball speed, especially with high swingweight racquets, but the power comes from the player, not the racquet.
-	</p>
-	<p>
-		In the evaluations, head size, flex, string tension, and ball bounce are comprised in a standard bounce or elasticity (<a href="cof.html">coefficient of restitution</a>) of the racquet/ball system (0.85), so Flex and Head Size -- which are said to affect bounce, and therefore &quot;power&quot; according to the popular understanding -- are not used independently for Work or &quot;power&quot; evaluations. We assume that all racquets are strung such that they have the same bounce.
-	</p>
-	<p>
-		Work, like Shock, is measured in terms of joules of energy, and the formula for Work (and <a href="kinetic.html">kinetic energy</a>) is <b>&frac12; Mv&sup2;</b> (<b><i>M</i></b> is racquet mass in kilograms and <b><i>v</i></b> is the linear velocity of the racquet mass center (balance point) just before impact, in meters per second). The Work done during the impact, i.e. the player's grip, is not counted, because studies show that it does not add materially to the speed of the ball.
-	</p>
-	<p>
-		It turns out that head-heavy racquets require a lot more Work to hit the ball fast, which is bad. They are also hard on the wrist, elbow, and shoulder, which is worse. Head-light and heavy racquets with substantial swingweight (like the Prince Original Graphite OS) are the most efficient and therefore most powerful (best payoff for the effort, i.e. lowest Work). See the <a href="2002/Criteria_Rankings/work.html">Work Rankings</a> for the 2002 survey of 167 racquets.
-	</p>
-	<hr>
-	<p>
-		8. <a id="Shoulder_Pull"></a>Shoulder Pull is the force (in the metric unit of Newtons, a Newton being about a quarter of a pound) exerted by the shoulder muscles in opposing the centrifugal force acting on the racquet as it moves around the shoulder in the swing resulting from the player's Work (see <a href="formulas.html">formula for Shoulder Pull</a>, see <a href="shoulder_pull.html">derivation of formula for Shoulder Pull</a>). This opposing force is called a &quot;centripetal&quot; force because it acts toward the axis of rotation (here the shoulder socket); Shoulder Pull is equal and opposite to the centrifugal force while the racquet is getting up to speed for the impact, and reaches its maximum the instant before impact, which is where we measure it. After impact, this centripetal force continues, but the offsetting centrifugal force is reduced because the racquet has slowed down. The excess centripetal force becomes a radial compressive force known as Shoulder Crunch.
-	</p>
-	<p>
-		The formula for centripetal force is <b>Mv&sup2;/R</b> (where <b><i>M</i></b> is racquet mass in kilograms, <b><i>v</i></b> is the linear velocity of the mass center, in meters/second, and <b><i>R</i></b> is the distance, in meters, from the racquet mass center to the axis of rotation, here the shoulder). Note that, in rotation, the mass center linear velocity (v) decreases as the balance gets more head-light, so head-light balance can mean low Shoulder Pull, even if the racquet is heavy. The variable v is squared in the formula for centripetal force, so a light racquet having a head-heavy balance may still have a large Shoulder Pull, despite its light weight, due to its distant mass center and consequent high mass center velocity in rotation. That's bad. See the <a href="2002/Criteria_Rankings/shoulder_pull.html">Shoulder Pull Rankings</a> for the 2002 survey of 167 racquets.
-	</p>
-	<hr>
-	<p>
-		9. <a id="Shoulder_Crunch"></a>Shoulder Crunch is the change in the centrifugal force acting on the racquet, a change that occurs due to the impact slowing the racquet down, thus creating a sudden excess in centripetal force at the shoulder. Before, the centripetal force and centrifugal force were in equilibrium, but suddenly there is an excess centripetal force. This is effectively a muscle spasm in the shoulder muscles. The formula for finding Shoulder Crunch derives from Shock (see <a href="derivations.html#Shoulder_Yank">derivation of formula for Shoulder Crunch</a>).
-	</p>
-	<p>
-		This excess centripetal force is a radial compressive force known as Shoulder Crunch, and is measured in units of force (Newtons in the metric system, pounds in the English system, 1 Newton = 0.225 lb.). Once the Shock is known, Shoulder Crunch follows by a simple calculation: Shoulder Crunch = (2/R)(Shock) (where R = distance of the racquet's mass center from the axis of reference, here the shoulder). See the <a href="derivations.html#Shoulder_Yank">derivation</a>. R will be equal to the distance from the player's hand to his shoulder (0.61 m) plus the distance from the hand to the balance point of the racquet (0.01*r). Please note that it is only the Shoulder Crunch due to the racquet that is calculated here -- there is also mass in the arm swinging the racquet, and it slows down too, but for purposes of racquet comparisons we assume that it is the same arm for every racquet, as if one player were trying out all of them. <a href="2002/Criteria_Rankings/shoulder_crunch.html">Shoulder Crunch Rankings</a> for the 2002 survey of 167 racquets.
-	</p>
-	<hr>
-	<p>
-		10. <a id="Elbow_Crunch"></a>Elbow Crunch is the excess centripetal force acting at the elbow, an excess that occurs because on impact the racquet slows down, so its centrifugal force drops. The centripetal force of the muscles attaching to the elbow and the centrifugal force of the racquet in its swing had been balanced before the impact, but the sudden slowdown creates what is effectively a muscle spasm. The muscle continues to contract as if it still had a full load, so it suddenly shortens and yanks on the tendons that attach it to the elbow. This yank (Elbow Crunch) is a cyclic stress which, repeated over time, may be a contributing cause to tissue failure. Like Shoulder Crunch, it is calculated by multiplying Shock by 2/R' (where R' is the distance of the racquet's mass center from the elbow, and is equal to the distance from the hand to the elbow (0.36 m) plus the distance from the hand to the balance point (0.01*r)). See the <a href="derivations.html#Elbow_Yank">derivation of Elbow Crunch</a>. Elbow Crunch is larger than Shoulder Crunch because the elbow is closer than the shoulder to the mass center of the racquet, so R' is smaller than R. Elbow Crunch is measured in units of force (Newtons, 1 Newton = 0.225 lb. or 3.6 oz.). <a href="2002/Criteria_Rankings/elbowcrunch.html">Elbow Crunch Rankings</a> for the 2002 survey of 167 racquets.
-	</p>
-	<hr>
-	<p>
-		11. <a id="Wrist_Crunch"></a>Wrist Crunch is derived the same as Elbow Crunch, only the new distance R&quot; is measured from the mass center to the wrist, not the elbow. R&quot; is equal to the distance from the wrist to the racquet axis of rotation (0.08 m) plus the distance from the axis of rotation to the balance point (0.01*r). <a href="2002/Criteria_Rankings/wristcrunch.html">Wrist Crunch Rankings</a> for the 2002 survey of 167 racquets.
-	</p>
-	<hr>
-	<p>
-		12. <a id="Impact_Impulse"></a>Impact Force is the change in the racquet's momentum on impact, divided by the time it occurs (0.010 seconds, the dwell time). It is the force (measured in Newtons) appearing at the mass center (balance point) upon impact with the ball, which for comparison purposes we assume to be 16 cm from the tip, approximately at the center of the strings, for all racquets. For a smooth followthrough, and for low resultant stresses on the arm, the Impact Force should be low. See the <a href="impact_force.html">derivation of a formula for Impact Force</a>. Impact Force correlates exactly with Impulse Reaction in the rankings, so the Impulse Reaction rankings are Impact Force rankings as well. The higher the sweet spot, the lower the Impact Force. <a href="2002/Criteria_Rankings/impact_force.html">Impact Force Rankings</a> for the 2002 survey of 167 racquets.
-	</p>
-	<p>
-		If we multiply the Impact Force by the lever arm on which it operates (i.e. the distance from the hand to the balance point), we get exactly the same Torque as calculated by the formula for Torque. So the benefit of a high sweet spot will be offset by a head-heavy balance, because a head-heavy balance means a long lever arm for the Impact Force to operate on, and thus a severe bending of the hand on impact, with concomitant damage to the elbow from the whiplash mechanism.
-	</p>
-	<hr>
-	<p>
-		13. <a id="Tip_Speed"></a>Tip Speed is the velocity of the racquet tip just before impact. A low tip speed means that the swing need not be as violent to achieve the same ball speed, and therefore easier to control and more accurate. <a href="derivations.html#Tip_Speed">Derivation</a> of Tip Speed formula.
-	</p>
-	<hr>
-	<p>
-		14. <a id="Polar_Moment">Polar Moment</a> is the racquet's rotational inertia about its longitudinal axis: its resistance to a screwdriver twist. This should be high. Shoulder weighting, such as by Wilson's Perimeter Weighting System, or by lead tape at 9 and 3 on the racquet head, increases Polar Moment. So does larger racquet head size. Measurement of Polar Moment so far is not available, so it is not used in the evaluations done on this site. Torsional stability would be increased by high Polar Moment.
-	</p>
-	<hr>
-	<p class="text-center">
-		Non-Scientific Evaluation Criteria
-	</p>
-	<p>
-		There is another vocabulary that one frequently encounters in discussions of tennis racquets:
-	</p>
-	<p>
-	<a id="Maneuverability">Maneuverability</a> is vague jumble of Moment and swingweight, with a meaning varying from player to player. Some understand maneuverability to be another name for swingweight, so for them a maneuverable racquet is easy to slap at tough gets. Others understand it to be Moment, and a maneuverable racquet is one that is easy to get in position for quick reaction strokes like volleys and returns. There is a difference between Moment and swingweight, despite the common misunderstanding that high swingweight necessarily implies a head-heavy balance and therefore high Moment. It is possible to have a racquet that has a low Moment and a high swingweight (e.g. the tailweighted Hammer). The confusion with regard to the term &quot;maneuverability&quot; has resulted in the unjust charge that high swingweight is bad, when the problem is actually high Moment.
-	</p>
-	<hr>
-	<p>
-	<a id="Power">Power.</a> The weaker the player, the stronger his lust for a racquet, at any price, that promises to improve his &quot;power.&quot; No term features so prominently in racquet ads, yet has so little clarity of meaning. It could mean:
-	</p>
-	<p>
-		(1) racquet bounce (i.e. high coefficient of restitution);  
-		 
-		(2) high swingweight (a racquet which allows you to load up a lot of angular momentum so that it will not bounce off the ball); or  
-		 
-		(3) low Work (an efficient racquet, which requires the least player effort to achieve a given ball speed, or, which produces the greatest ball speed with a given player effort).
-	</p>
-	<p>
-		It appears that the common understanding of &quot;power&quot; is (1), high coefficient of restitution.
-	</p>
-	<p>
-		Proponents of stiff materials make the claim that their racquets are &quot;powerful&quot; because the stiff frame recovers in time to catapult the ball forward. Where is the experimental confirmation of this claim? I have seen none, and my invitation has been extended for over four years. Professor Howard Brody, however, says this:
-	</p>
-	<blockquote>
-		<p>
-			&quot;When a racket flexes, most of the energy that goes into racket frame deformation is not returned to the ball ... In the literature of tennis, there is evidence that there is little difference in racket response between a free racquet and a racket with its handle firmly clamped, for ball impacts along the long axis of the racket. When a ball hits a racket, it produces a transverse wave that travels along the racket, and then is reflected both from the tip and from the butt end. If the wave that is reflected from the butt end arrives at the impact point after the ball has departed, the ball will have no knowledge of how the handle is secured. The propagation time of such a wave can be estimated by measuring the frequency of the lowest mode of free oscillation of the racquet (about 150 Hz) and separation between the nodes (0.4 m). This gives a velocity of about 120 m/s, and a round trip propagation time to the butt and back of 8 ms, which is considerably longer than the dwell time on the strings. This might explain why the free racket and the clamped handle data taken in the lab show little difference.&quot; H. Brody, &quot;The Physics of Tennis III. The Ball-Racket Interaction,&quot; 65 Am. J. Phys. 981, 982 (Oct. 1997).
-		</p>
-	</blockquote>
-	<p>
-		And, in any case, the strings are the major component in racquet bounce. Maybe the advantage of the stiff frame is that it does not flex as much initially, thus requiring the strings to stretch more on impact. Anecdotally, stiff frames with large heads are known to be bouncy, with a pronounced trampoline effect. Control, however, suffers as bounce increases, particularly with large heads. Expert players tend to prefer low &quot;power&quot; racquets because they don't need any help putting pace on the ball, and they have learned the value of accurate placement.
-	</p>
-	<p>
-		In science, power is measured in watts. A watt is one joule of energy/work/heat/effort per second, and one horsepower is 746 watts. Power is the rate of doing work. Of course, a racquet cannot be given a horsepower rating. The player/racquet system has power, with the player providing the effort and the racquet providing the interface with the ball to deliver that player effort. So if, consistent with this scientific meaning, we consider a powerful racquet to be one can achieve a certain ball speed with the least player effort per unit time, and we limit the time of the stroke, what power then becomes is the inverse of Work: low Work means high power. In the June 1999 Racquet Evaluations, Power was thus defined, but the reaction has been unfavorable because this is not the popular understanding of the term &quot;power.&quot; Instead, the new term will be &quot;Efficiency.&quot; Those who understand will know how to use the information provided by the Efficiency rankings.
-	</p>
-	<hr>
-	<p>
-	<a id="Control">Control</a> -- everybody wants it, but nobody knows how to measure it. Just what is &quot;control,&quot; exactly? According to the USRSA, power and control are two ends of a continuum, so high power is low control, and vice versa. This makes sense, provided that you assume that the composite of head size/flex that determines racquet bounce is synonymous with &quot;power.&quot;
-	</p>
-	<p>
-		But if power and control are mutually exclusive, it requires some ingenuity to devise an ad campaign emphasizing control that will lure the crypto-macho consumer. My personal favorite is Head's &quot;Control Your Rage&quot; ad for its &quot;titanium&quot; racquets, the one that has a settings on the cross bar for &quot;Destroy - Annihilate - Humiliate&quot; (the opponent, presumably). See, you've pandered to the lust for power, and you've introduced some quaint notion of the need for moderation and sportsmanship in its use. The control setting, however, gets no wimpier than &quot;Destroy.&quot;
-	</p>
-	<p>
-		Another meaning of &quot;control&quot; might be how easy the racquet is to wield, but now we have some confusion with &quot;maneuverability&quot; and all of its uncertainties. &quot;Stability&quot; is another vague term often heard, which seems to connote &quot;control,&quot; but according to the USRSA, stability is just high swingweight, i.e. the opposite of &quot;maneuverability&quot; -- and there we are again back trying to understand just what is meant by &quot;maneuverability.&quot; The idea of controlling the shot by your effort during the impact is refuted by the above quote from Professor Brody.
-	</p>
-	<hr>
-	<p class="text-center">
-		Macro Criteria for Meaningful Racquet Rankings
-	</p>
-	<p>
-		Five macro criteria comprise the results under the relevant performance criteria. These macro criteria are Efficiency, Elbow Safety, Shoulder Safety, Wrist Safety, and Dexterity.
-	</p>
-	<p>
-		The rankings under the performance criteria (Torque, Shock, etc.) for each of the five benchmark conditions were compiled and then weighted according to the comparative magnitude of the forces. See the <a href="2002/Weighting_Factors.html">Weighting Factors</a>.
-	</p>
-	<p>
-	<a id="Efficiency">Efficiency</a>  
-	Which racquets produce the required ball speed with the least effort. The higher ranking (low numbers are better, just like player rankings) racquets under the macro criterion of Efficiency require the least effort. Work ranks under the five benchmark conditions were weighted and summed to get a composite score, which was then sorted for <a href="2002/efficiency.html">Efficiency</a> rank.
-	</p>
-	<p>
-	<a id="Elbow_Safety">Elbow Safety</a>  
-	See <a href="faq.html#id-tennis-elbow">what causes tennis elbow</a>. The macro criterion of Elbow Safety comprises the evaluation criteria of 1.5*Elbow Crunch, Torque, Shock, 0.5*Moment, and 0.5*Flex. Moment and Flex were weighted half as much as Torque and Shock, which are more important. Flex serves to ameliorate Torque by absorbing the bending energy and (possibly) increasing the dwell time, and the great weight and preponderance of anecdotal evidence now supports the conclusion that stiff racquets are a risk factor for tennis elbow. Moment is not as severe a force, but it is present for longer during play and stresses the elbow as the arm holds up the racquet. Moment also factors into Torsion. Elbow Crunch was weighted 1.5 times Torque and Shock, because it is even more important. Each of these evaluation criteria (Torque, etc.) produced composite rankings when the results under the five benchmark conditions were compiled, weighted, summed, and sorted. These composite rankings then were compiled, weighted, summed, and sorted to produce rankings under the macro criterion of <a href="2002/elbowsafety.html">Elbow Safety</a>.
-	</p>
-	<p>
-	<a id="Shoulder_Safety">Shoulder Safety</a>  
-	The composite <a href="2002/shouldersafety.html">rankings for Shoulder Safety</a> used an equally weighted mix of: Shoulder Pull, Shoulder Crunch, Impact Force, and Torque.
-	</p>
-	<p>
-	<a id="Wrist_Safety">Wrist Safety</a>  
-	The macro criterion of <a href="2002/wristsafety.html">Wrist Safety</a> comprises a weighted mix of: 1.5*Wrist Crunch, Moment, Torque, and 0.5*Flex. Moment stresses the wrist nearly constantly, and Wrist Crunch and Torque produce bigger but more infrequent stresses on impact. Flex is ameliorative of Torque, with the more flexible racquets (low flex number) absorbing more of the bending force produced by impact.
-	</p>
-	<p>
-	<a id="Dexterity">Dexterity</a>  
-	The macro criterion of <a href="2002/dexterity.html">Dexterity</a> comprises the evaluation criteria of Moment, Swingweight, and 0.5*Weight. Dexterity rankings are intended to reflect how easy the racquet is to wield before impact. Moment and Swingweight are weighted equally, and Weight is half as important because it is already comprised in Moment. This macro criterion should be of interest principally to weaker players. Expert players should disregard Dexterity because the good racquets tend to score low on it.
-	</p>
-	<p>
-		Overall Rankings
-	</p>
-	<p>
-		A weighted mix of: Efficiency, 1.5*Elbow Safety, Shoulder Safety, Wrist Safety, and 0.5*Dexterity were summed to produce overall rankings for racquets to be used by beginners and weak players. For strong players, the Dexterity macro criterion was disregarded.
-	</p>
-	<p>
-	<a href="2002/weakoverall.html">Overall Racquet Rankings for Weak Players 2002</a>
-	</p>
-	<p>
-	<a href="2001/expertstopbottom30.html">Overall Racquet Rankings for Experts 2002</a>
-	</p>
-	<p class="text-center">
-		Rankings under the Macro Criteria  
-	<a href="2002/efficiency.html">Efficiency</a> | <a href="2002/elbowsafety.html">Elbow Safety</a> | <a href="2002/shouldersafety.html">Shoulder Safety</a> | <a href="2002/wristsafety.html">Wrist Safety</a> | <a href="2002/dexterity.html">Dexterity</a>
-	</p>
-	<p class="text-center">
-		Manufacturer Report Card  
-		(how each racquet ranks under all of the evaluation criteria)  
-	<a href="2002/Manufacturers/babolat.html">Babolat</a> | <a href="2002/Manufacturers/blackburne.html">Blackburne</a> | <a href="2002/Manufacturers/cayman.html">Cayman</a> | <a href="2002/Manufacturers/dunlop.html">Dunlop</a> | <a href="2002/Manufacturers/fischer.html">Fischer</a> | <a href="2002/Manufacturers/gosen.html">Gosen</a> | <a href="2002/Manufacturers/head.html">Head</a> | <a href="2002/Manufacturers/prince.html">Prince</a> | <a href="2002/Manufacturers/pro_kennex.html">Pro Kennex</a> | <a href="2002/Manufacturers/slazenger.html">Slazenger</a> | <a href="2002/Manufacturers/topspin.html">Topspin</a> | <a href="2002/Manufacturers/volkl.html">Volkl</a> | <a href="2002/Manufacturers/weed.html">Weed</a> | <a href="2002/Manufacturers/wilson.html">Wilson</a> | <a href="2002/Manufacturers/yonex.html">Yonex</a>
-	</p>
-	<p class="text-center">
-		Rankings Under the Evaluation Criteria:  
-		These are the most useful rankings because they come directly from formula calculations.  
-		<b><a style="color: rgb(0,0,255)" href="2002/Criteria_Rankings/moment_rankings.html">Moment</a> | <a href="2002/Criteria_Rankings/torque.html">Torque</a> | <a href="2002/Criteria_Rankings/shock.html">Shock</a> | <a href="2002/Criteria_Rankings/work.html">Work</a> | <a href="2002/Criteria_Rankings/shoulder_pull.html">Shoulder Pull</a> | <a href="2002/Criteria_Rankings/shoulder_crunch.html">Shoulder Crunch</a> | <a href="2002/Criteria_Rankings/elbowcrunch.html">Elbow Crunch</a> | <a href="2002/Criteria_Rankings/wristcrunch.html">Wrist Crunch</a> | <a href="2002/Criteria_Rankings/impact_force.html">Impact Force</a> | <a href="2002/Criteria_Rankings/sweetspot.html">Sweet Spot</a> | <a href="2002/Criteria_Rankings/flex.html">Flex</a> | <a href="2002/Criteria_Rankings/swingweight.html">Swingweight</a> | <a href="2002/Criteria_Rankings/mass.html">Weight</a> </b>
-	</p>
-	<p>
-	<a href="2002/Specs.html">Racquet Specs according to U.S. Racquet Stringers Association</a> of 167 racquets currently available, including price, head size, string pattern, and flex.
-	</p>
-	<p>
-	<a href="2002/Weighting_Factors.html">Weighting Factors used in the composite rankings</a>
-	</p>
-</div>
+			<div class="col-md-9">
+				<h2>
+					Introduction to Racquet Science
+				</h2>
+				<h3>
+					<a id="Objective">Objective</a> Evaluation Concepts and Answers to Frequently Asked Questions
+				</h3>
+				<p>
+					Here&rsquo;s an interesting question: Why don&rsquo;t the touring pros use the same racquets that their sponsors sell to the public? The pros heavily customize to add mass and swingweight, even though the paint job would lead you to believe that they are playing with the same racquet you can buy. Why is such a fix necessary?
+				</p>
+				<p>
+					It has been estimated that half of all players over 30 suffer from tennis elbow. So it&rsquo;s important to have good information because the consequences of a bad racquet choice are worse than the waste of $300. But how can a player make an informed choice? Racquet ads are not very informative, and often deliberately misleading. You can't rely on what the pros pretend to use. Playtests depend on the personal opinion of the testers, and like all subjective tests are suspect for obvious reasons.
+				</p>
+				<p>
+					What's needed is a set objective performance criteria, some quantifiable and meaningful terms instead of ad hype and subjective playtests. Here are some scientific concepts and real <a id="performance_criteria">performance criteria</a> for tennis racquets:
+				</p>
+				<ul>
+					<li><a href="#Sweet_Spot">Sweet Spot</a></li>
+					<li><a href="#Moment">Moment</a></li>
+					<li><a href="#Torque">Torque</a></li>
+					<li><a href="#Longitudinal_Torque">Torsion</a></li>
+					<li><a href="#Polar_Moment">Polar Moment</a></li>
+					<li><a href="#Impulse_Reaction">Impulse Reaction</a></li>
+					<li><a href="#Shock">Shock</a></li>
+					<li><a href="#Work">Work</a></li>
+					<li><a href="#Shoulder_Pull">Shoulder Pull</a></li>
+					<li><a href="#Shoulder_Crunch">Shoulder Crunch</a></li>
+					<li><a href="#Elbow_Crunch">Elbow Crunch</a></li>
+					<li><a href="#Wrist_Crunch">Wrist Crunch</a></li>
+					<li><a href="#Impact_Impulse">Impact Force</a></li>
+				</ul>
+				<p>
+					Other commonly used criteria:
+				</p>
+				<ul>
+					<li><a href="#Power">Power</a></li>
+					<li><a href="#Maneuverability">Maneuverability</a></li>
+					<li><a href="#Control">Control</a></li>
+				</ul>
+				<h3>
+					Evaluation Criteria for Racquet Performance
+				</h3>
+				<p>
+					1. The <a id="Sweet_Spot"></a>Sweet Spot is known to cognoscenti as the &quot;center of percussion.&quot; It is dependent on the location of the <a href="axis_of_rotation.html">axis of rotation</a> at the hand in the stroke (see <a href="derivations.html#Those">formula for sweet spot location)</a>. A high sweet spot, i.e. a center of percussion close to the tip of the racquet is good because it means low Impact Force. See <a href="2002/Criteria_Rankings/sweetspot.html">Sweet Spot Rankings</a> for the 2002 survey of 167 racquets.
+				</p>
+				<p>
+					The sweet spot is a point, not an area, although some refer to the &quot;sweet spot&quot; on the racquet being &quot;large.&quot; Another alias for the center of percussion is &quot;center of oscillation.&quot; The &quot;sweet&quot; area on the string bed is where the racquet's bounce is maximized, and this has nothing to do with the center of percussion.
+				</p>
+				<p>
+					The sweet spot is determinative of the force from impact: the higher the sweet spot, the lower the Impact Force acting at the racquet's mass center, and the more positive the Impulse Reaction at the hand. If the balance is close to the hand, this will also mean low Torque and therefore less stress on the arm.
+				</p>
+				<p>
+					Generally speaking, the higher the sweet spot on the racquet face (i.e. the longer the distance (q) from the hand to the sweet spot) the better. However, because racquets are of different lengths, it is misleading to compare q values directly, because q is the distance of the center of percussion from the axis of rotation, and for a long racquet a high q may still mean a low sweet spot. So what counts is the distance of the sweet spot from the tip. The formula for finding the center of percussion on any racquet is
+				</p>
+				<p class="text-center">
+					<b><i>q = I / Mr</i></b>
+				</p>
+				<p>
+					[q is the distance in centimeters from the <a href="axis_of_rotation.html">axis of rotation</a> to the center of percussion; <b><i>M</i></b> is racquet mass in kilograms;<b><i> r</i></b> is the distance in centimeters from the axis of rotation to the mass center, or balance point, of the racquet; and <b><i>I</i></b> is racquet swingweight about the axis of rotation (also known as moment of inertia or rotational inertia or Second Moment) in the units measured on the Babolat Racquet Diagnostic Center (kg&middot;cm&sup2;). The axis of rotation is 7 cm from the handle end on the forehand, 5 cm on the serve, and the Babolat RDC measures swingweight about an axis 10 cm from the handle end, so the RDC swingweight must be converted using the <a href="parallel.html">Parallel Axis Theorem</a>].
+				</p>
+				<hr>
+				<p>
+					2. <a id="Moment">Moment</a> is the turning force pivoting the racquet head down when you hold the racquet parallel to the ground. Moment, in Newton.meters, is a measure of how heavy the racquet feels to hold up parallel to the ground (not merely the weight of the racquet, but this weight multiplied by its lever arm).
+				</p>
+				<p>
+					Moment should be especially important for juniors and ladies. A light racquet having a balance point far from the hand may have a larger Moment than a heavy racquet with a head-light balance, so merely knowing the weight of a racquet is not enough, and may be misleading.
+				</p>
+				<p>
+					It is deplorable that ignorant consumers are being enticed to buy dangerous racquets by misleading sales ploys like inviting them to pick up the racquet by the wrong end to see how light it is. This &quot;pick up appeal&quot; pitch is causing tennis to lose players and popularity at an alarming rate. What counts is Moment, not weight. Moment is the racquet's weight times its lever arm, which is the distance to the balance point from the axis of rotation (this axis is at the middle of the hand, 7 cm from the handle end). Weight in the metric system is the mass of the racquet, in kilograms, times the acceleration due to gravity (9.81 meters/s&sup2;), and the distance to the balance point is in meters. The unit of measure of torque is the Newton.meter (1 Newton.meter = 0.7375 foot pounds of torque = the same force you would feel holding a 3.6 ounce weight at the end of a meter stick). The lower the Moment, the better.
+				</p>
+				<p>
+					Moment is key for two reasons: (1) a racquet with a high Moment is bad because it is hard to hold up and to position for volleys and returns, especially for juniors and ladies; and (2) Moment multiplied by Torque gives the Torsion, which is the screwdriver twist about the racquet's handle centerline resulting from impacts, even impacts on the centerline. High Torsion is bad for tennis elbow. See the <a href="faq.html#id-tennis-elbow">discussion below</a> on tennis elbow. <a href="2002/Criteria_Rankings/moment_rankings.html">Moment Rankings</a> for the 2002 survey of 167 racquets.
+				</p>
+				<hr>
+				<p>
+					Torque and Impulse Reaction are the two &quot;<a id="resultant_forces"></a>resultant forces&quot; from an &quot;eccentric impact,&quot; such as the impact of a racquet with a ball. This is called an &quot;eccentric impact&quot; because the two mass centers (ball center and racquet balance point) do not move along the same line to a point of collision. When you hit the Sweet Spot, Impulse Reaction is zero, but there is still some Torque.
+				</p>
+				<p>
+					3. <a id="Torque"></a>Torque is a bending force resulting from impact, that causes the hand to bend back and then catapult forward. This torque is measured about <a href="axis_of_rotation.html">the axis of rotation</a> of the racquet in the stroke, which is 7 cm from the handle end on the forehand (First, Third, and Fourth Benchmark Conditions), and 5 cm on the serve (Second and Fifth Benchmark Conditions) -- approximately the middle finger location. Note that Torque is not the screwdriver twist of the handle (which will be called Torsion, or Longitudinal Torque), but the bending back of the racquet. (See <a href="formulas.html">formula for Torque</a>, see <a href="torque_formula.html">derivation of formula for Torque)</a>. Torque winds up a catapult in the wrist, which flings the racquet forward after the ball has gone. The stronger this catapulting force, the worse the whipsawing stress cycle resulting from the stroke, and thus the worse for <a href="faq.html#id-tennis-elbow">tennis elbow</a> -- so high Torque is bad.
+				</p>
+				<p>
+					Some loss of energy could be expected from the conversion of Torque into the subsequent forward catapulting force, due to absorption of Torque in the bending of the racquet frame and stretching of the muscles, so it will be difficult to quantify the catapult effect. Note, however, that a stiff racquet (high Flex number) will not absorb as much of this bending force, and therefore a stiff racquet is a risk factor for tennis elbow.
+				</p>
+				<p>
+					Expert players tend to prefer the slim, more flexible racquets, which absorb Torque in frame bending and thereby reduce the catapulting force that flings the racquet forward after impact. The &quot;widebody revolution&quot; (of the late 80's) never caught on among the pros, for good reason. Stiff racquets may be good for power, but they are bad for tennis elbow. Note that Torque depends on dwell time, and the shorter the dwell time the worse the Torque. Flexible racquets may have the advantage of increasing dwell time, although no proof of this is presently available.
+				</p>
+				<p>
+					Note that Torque is a different twisting force from Moment, although both are measured in the same metric torque unit (Newton.meters). The difference is in the axis of the twist. Moment is about an axis of rotation parallel to the ground, while Torque is about the axis determined by the path of the ball and the attitude of the racquet face (for ground strokes, an axis perpendicular to the ground). For all racquets, in all <a href="benchmarkconditions.html">benchmark conditions</a>, we assume an impact on the centerline with the racquet face perpendicular to the ground. <a href="2002/Criteria_Rankings/torque.html">Torque Rankings</a> for the 2002 survey of 167 racquets.
+				</p>
+				<hr>
+				<p>
+					4. Torsion or <a id="Longitudinal_Torque"></a>Longitudinal Torque is the screwdriver twisting force around an axis running up the handle. Such a force arises even from impacts on the centerline. This criterion is the cross product of Moment and Torque. As we assume a centerline hit in our calculations under both benchmark conditions, the additional screwdriver twist from an off-centerline hit is not evaluated. See the discussion below on <a href="faq.html#id-shoulder-weighting">whether weighting at 9 and 3 o'clock on the head is good</a>. Torsion from a centerline hit is simply the cross product (vector product) of Moment and Torque. That means you multiply Torque by Moment and then multiply by the sine of the angle between these two vectors. For groundstrokes (assuming the axis of rotation is perpendicular to the ground and the racquet is parallel to the ground), the angle is 90 degrees so the sine is 1. For the serve, there is no Torsion because there is no Moment when the racquet is pointing straight up.
+				</p>
+				<p>
+					Both high Moment and high Torque contribute to high Torsion. For a right-handed forehand, Torsion would be a twist in the clockwise direction. This twist winds up the racquet to release in a sudden handle twist in the opposite direction (counterclockwise) once the ball leaves. The magnitude of this second twist depends on racquet stiffness (stiff is bad).
+				</p>
+				<p>
+					Torsion also results from impacts off the centerline, the amount of torsion being the Impact Force (in Newtons) times the distance, in meters, from the centerline to the point of impact. For off-center impacts, a low Impact Force (i.e. a high Sweet Spot) is best.
+				</p>
+				<hr>
+				<p>
+					5. <a id="Impulse_Reaction"></a>Impulse Reaction is a push (positive Impulse Reaction) or pull (negative) on the axis of rotation (the hand) resulting from impact (see <a href="formulas.html">formula for Impulse Reaction</a>, also see <a href="Impulse.html">derivation of formula for Impulse Reaction</a>). Impacts above the center of percussion (Sweet Spot) result in a pull on the hand; below is a push. A positive Impulse Reaction is better because it means less Impact Force (the rankings of Impulse Reaction [positive good] and Impact Force are exactly the same).
+				</p>
+				<p>
+					Impulse Reaction is measured in units of force, because it is a translational force (straight ahead push or pull) on the <a href="axis_of_rotation.html">axis of rotation</a> (at the hand). The unit of measurement of force in the metric system is the Newton (1 Newton = 0.2248 pounds, or 3.6 ounces, of force). For impacts above the Sweet Spot (center of percussion), Impulse Reaction is a pull from the player to counter the yank on the hand (negative value). For impacts below the center of percussion, Impulse Reaction is a push against the hand (positive value). Right on the center of percussion (sweet spot), there is no Impulse Reaction at all (zero value).
+				</p>
+				<p>
+					Our directional convention is that positive is toward the net, so a pull is a negative Impulse Reaction. Positive is better than negative because positive Impulse Reaction adds more speed to the racquet during the impact, while negative Impulse Reaction tends to bring the head under the ball as it yanks the arm forward.
+				</p>
+				<p>
+					The Impulse Reaction rankings are the same as the rankings for Impact Force. The higher the sweet spot, the more positive (less negative) the Impulse Reaction, and the lower the Impact Force.
+				</p>
+				<hr>
+				<p>
+					6. <a id="Shock"></a>Shock loading of the racquet results from a sudden change in the racquet's <a href="kinetic.html">kinetic energy</a> on impact, which produces an internal energy load on the racquet, which is expressed as frame vibration. Shock also determines <a href="#Shoulder_Crunch">Shoulder Crunch</a>, <a href="#Elbow_Crunch">Elbow Crunch</a>, and <a href="#Wrist_Crunch">Wrist Crunch</a> (see <a href="formulas.html">formula for Shock,</a> see <a href="shock_formula.html">derivation of formula for Shock</a>). This change in kinetic energy is how much the racquet slows down when it slams into the ball, while kinetic energy is converted into internal or potential energy. Shock is measured in joules (the same metric unit as work, heat and energy). Although the term &quot;shock&quot; has no generally accepted definition in engineering, for our purposes we will call Shock the difference between the initial and final kinetic energy of the racquet. See <a href="shock_discussion.html">note</a>.
+				</p>
+				<p>
+					Before impact, you put energy into the racquet to get it up to speed for the collision, and during the impact you put in a little more energy to aim the shot. After the ball leaves, the racquet mass center (balance point) moves at a slower speed, and this means a loss of its kinetic energy (kinetic energy = &frac12; mass times velocity squared). The ball gets some of this lost energy (the same for all racquets under all benchmark conditions), and the rest becomes internal energy, wasted in bending the frame.
+				</p>
+				<p>
+					If the frame is stiff and light, the frame bending energy will not be absorbed by the material of the frame but will but will have to be dumped into the arm holding on to the racquet. Don't place any reliance on string buttons to save your arm. Damping gadgets on the strings are too small in mass to do much besides reduce residual string vibration, which is a minor annoyance, and damping gadgets in the frame must be expected to handle an energy load of the magnitude determined by the design of the racquet.
+				</p>
+				<p>
+					The most effective vibration damper is a large particulate handle end weight (e.g. a bag of shot or sand), which serves to divert and dissipate the energy. Also effective at vibration damping is the Pro Kennex Kinetic system, which has particulate weights in the racquet head, and the Wilson Triad system, which absorbs the energy in special frame joints.
+				</p>
+				<p>
+					Better than damping is prevention of Shock by proper weight distribution in the racquet (head-light and heavy overall).
+				</p>
+				<p>
+					High Shock is bad also because it means high <a href="#Wrist_Crunch">Wrist Crunch</a>, <a href="#Elbow_Crunch">Elbow Crunch</a>, and <a href="#Shoulder_Crunch">Shoulder Crunch</a>. That is so because the formulas for these criteria derive from Shock. See the <a href="2002/Criteria_Rankings/shock.html">Shock Rankings</a> for the 2002 survey of 167 racquets.
+				</p>
+				<hr>
+				<p>
+					7. <a id="Work">Work</a> is the energy required to produce a certain ball speed with the racquet (see <a href="formulas.html">formula for Work</a>, see <a href="work_formula.html">derivation of formula for Work</a>). Work measures the energy efficiency of the racquet, so low Work is good. High Work is bad because the player has to swing harder to get the same result. Work quantifies a racquet's power: the less work the player has to put in to get the required ball speed in the allotted time for the stroke, the more powerful the racquet. Of course, a player may put in lots of effort and get lots of ball speed, especially with high swingweight racquets, but the power comes from the player, not the racquet.
+				</p>
+				<p>
+					In the evaluations, head size, flex, string tension, and ball bounce are comprised in a standard bounce or elasticity (<a href="cof.html">coefficient of restitution</a>) of the racquet/ball system (0.85), so Flex and Head Size -- which are said to affect bounce, and therefore &quot;power&quot; according to the popular understanding -- are not used independently for Work or &quot;power&quot; evaluations. We assume that all racquets are strung such that they have the same bounce.
+				</p>
+				<p>
+					Work, like Shock, is measured in terms of joules of energy, and the formula for Work (and <a href="kinetic.html">kinetic energy</a>) is <b>&frac12; Mv&sup2;</b> (<b><i>M</i></b> is racquet mass in kilograms and <b><i>v</i></b> is the linear velocity of the racquet mass center (balance point) just before impact, in meters per second). The Work done during the impact, i.e. the player's grip, is not counted, because studies show that it does not add materially to the speed of the ball.
+				</p>
+				<p>
+					It turns out that head-heavy racquets require a lot more Work to hit the ball fast, which is bad. They are also hard on the wrist, elbow, and shoulder, which is worse. Head-light and heavy racquets with substantial swingweight (like the Prince Original Graphite OS) are the most efficient and therefore most powerful (best payoff for the effort, i.e. lowest Work). See the <a href="2002/Criteria_Rankings/work.html">Work Rankings</a> for the 2002 survey of 167 racquets.
+				</p>
+				<hr>
+				<p>
+					8. <a id="Shoulder_Pull"></a>Shoulder Pull is the force (in the metric unit of Newtons, a Newton being about a quarter of a pound) exerted by the shoulder muscles in opposing the centrifugal force acting on the racquet as it moves around the shoulder in the swing resulting from the player's Work (see <a href="formulas.html">formula for Shoulder Pull</a>, see <a href="shoulder_pull.html">derivation of formula for Shoulder Pull</a>). This opposing force is called a &quot;centripetal&quot; force because it acts toward the axis of rotation (here the shoulder socket); Shoulder Pull is equal and opposite to the centrifugal force while the racquet is getting up to speed for the impact, and reaches its maximum the instant before impact, which is where we measure it. After impact, this centripetal force continues, but the offsetting centrifugal force is reduced because the racquet has slowed down. The excess centripetal force becomes a radial compressive force known as Shoulder Crunch.
+				</p>
+				<p>
+					The formula for centripetal force is <b>Mv&sup2;/R</b> (where <b><i>M</i></b> is racquet mass in kilograms, <b><i>v</i></b> is the linear velocity of the mass center, in meters/second, and <b><i>R</i></b> is the distance, in meters, from the racquet mass center to the axis of rotation, here the shoulder). Note that, in rotation, the mass center linear velocity (v) decreases as the balance gets more head-light, so head-light balance can mean low Shoulder Pull, even if the racquet is heavy. The variable v is squared in the formula for centripetal force, so a light racquet having a head-heavy balance may still have a large Shoulder Pull, despite its light weight, due to its distant mass center and consequent high mass center velocity in rotation. That's bad. See the <a href="2002/Criteria_Rankings/shoulder_pull.html">Shoulder Pull Rankings</a> for the 2002 survey of 167 racquets.
+				</p>
+				<hr>
+				<p>
+					9. <a id="Shoulder_Crunch"></a>Shoulder Crunch is the change in the centrifugal force acting on the racquet, a change that occurs due to the impact slowing the racquet down, thus creating a sudden excess in centripetal force at the shoulder. Before, the centripetal force and centrifugal force were in equilibrium, but suddenly there is an excess centripetal force. This is effectively a muscle spasm in the shoulder muscles. The formula for finding Shoulder Crunch derives from Shock (see <a href="derivations.html#Shoulder_Yank">derivation of formula for Shoulder Crunch</a>).
+				</p>
+				<p>
+					This excess centripetal force is a radial compressive force known as Shoulder Crunch, and is measured in units of force (Newtons in the metric system, pounds in the English system, 1 Newton = 0.225 lb.). Once the Shock is known, Shoulder Crunch follows by a simple calculation: Shoulder Crunch = (2/R)(Shock) (where R = distance of the racquet's mass center from the axis of reference, here the shoulder). See the <a href="derivations.html#Shoulder_Yank">derivation</a>. R will be equal to the distance from the player's hand to his shoulder (0.61 m) plus the distance from the hand to the balance point of the racquet (0.01*r). Please note that it is only the Shoulder Crunch due to the racquet that is calculated here -- there is also mass in the arm swinging the racquet, and it slows down too, but for purposes of racquet comparisons we assume that it is the same arm for every racquet, as if one player were trying out all of them. <a href="2002/Criteria_Rankings/shoulder_crunch.html">Shoulder Crunch Rankings</a> for the 2002 survey of 167 racquets.
+				</p>
+				<hr>
+				<p>
+					10. <a id="Elbow_Crunch"></a>Elbow Crunch is the excess centripetal force acting at the elbow, an excess that occurs because on impact the racquet slows down, so its centrifugal force drops. The centripetal force of the muscles attaching to the elbow and the centrifugal force of the racquet in its swing had been balanced before the impact, but the sudden slowdown creates what is effectively a muscle spasm. The muscle continues to contract as if it still had a full load, so it suddenly shortens and yanks on the tendons that attach it to the elbow. This yank (Elbow Crunch) is a cyclic stress which, repeated over time, may be a contributing cause to tissue failure. Like Shoulder Crunch, it is calculated by multiplying Shock by 2/R' (where R' is the distance of the racquet's mass center from the elbow, and is equal to the distance from the hand to the elbow (0.36 m) plus the distance from the hand to the balance point (0.01*r)). See the <a href="derivations.html#Elbow_Yank">derivation of Elbow Crunch</a>. Elbow Crunch is larger than Shoulder Crunch because the elbow is closer than the shoulder to the mass center of the racquet, so R' is smaller than R. Elbow Crunch is measured in units of force (Newtons, 1 Newton = 0.225 lb. or 3.6 oz.). <a href="2002/Criteria_Rankings/elbowcrunch.html">Elbow Crunch Rankings</a> for the 2002 survey of 167 racquets.
+				</p>
+				<hr>
+				<p>
+					11. <a id="Wrist_Crunch"></a>Wrist Crunch is derived the same as Elbow Crunch, only the new distance R&quot; is measured from the mass center to the wrist, not the elbow. R&quot; is equal to the distance from the wrist to the racquet axis of rotation (0.08 m) plus the distance from the axis of rotation to the balance point (0.01*r). <a href="2002/Criteria_Rankings/wristcrunch.html">Wrist Crunch Rankings</a> for the 2002 survey of 167 racquets.
+				</p>
+				<hr>
+				<p>
+					12. <a id="Impact_Impulse"></a>Impact Force is the change in the racquet's momentum on impact, divided by the time it occurs (0.010 seconds, the dwell time). It is the force (measured in Newtons) appearing at the mass center (balance point) upon impact with the ball, which for comparison purposes we assume to be 16 cm from the tip, approximately at the center of the strings, for all racquets. For a smooth followthrough, and for low resultant stresses on the arm, the Impact Force should be low. See the <a href="impact_force.html">derivation of a formula for Impact Force</a>. Impact Force correlates exactly with Impulse Reaction in the rankings, so the Impulse Reaction rankings are Impact Force rankings as well. The higher the sweet spot, the lower the Impact Force. <a href="2002/Criteria_Rankings/impact_force.html">Impact Force Rankings</a> for the 2002 survey of 167 racquets.
+				</p>
+				<p>
+					If we multiply the Impact Force by the lever arm on which it operates (i.e. the distance from the hand to the balance point), we get exactly the same Torque as calculated by the formula for Torque. So the benefit of a high sweet spot will be offset by a head-heavy balance, because a head-heavy balance means a long lever arm for the Impact Force to operate on, and thus a severe bending of the hand on impact, with concomitant damage to the elbow from the whiplash mechanism.
+				</p>
+				<hr>
+				<p>
+					13. <a id="Tip_Speed"></a>Tip Speed is the velocity of the racquet tip just before impact. A low tip speed means that the swing need not be as violent to achieve the same ball speed, and therefore easier to control and more accurate. <a href="derivations.html#Tip_Speed">Derivation</a> of Tip Speed formula.
+				</p>
+				<hr>
+				<p>
+					14. <a id="Polar_Moment">Polar Moment</a> is the racquet's rotational inertia about its longitudinal axis: its resistance to a screwdriver twist. This should be high. Shoulder weighting, such as by Wilson's Perimeter Weighting System, or by lead tape at 9 and 3 on the racquet head, increases Polar Moment. So does larger racquet head size. Measurement of Polar Moment so far is not available, so it is not used in the evaluations done on this site. Torsional stability would be increased by high Polar Moment.
+				</p>
+				<hr>
+				<p class="text-center">
+					Non-Scientific Evaluation Criteria
+				</p>
+				<p>
+					There is another vocabulary that one frequently encounters in discussions of tennis racquets:
+				</p>
+				<p>
+					<a id="Maneuverability">Maneuverability</a> is vague jumble of Moment and swingweight, with a meaning varying from player to player. Some understand maneuverability to be another name for swingweight, so for them a maneuverable racquet is easy to slap at tough gets. Others understand it to be Moment, and a maneuverable racquet is one that is easy to get in position for quick reaction strokes like volleys and returns. There is a difference between Moment and swingweight, despite the common misunderstanding that high swingweight necessarily implies a head-heavy balance and therefore high Moment. It is possible to have a racquet that has a low Moment and a high swingweight (e.g. the tailweighted Hammer). The confusion with regard to the term &quot;maneuverability&quot; has resulted in the unjust charge that high swingweight is bad, when the problem is actually high Moment.
+				</p>
+				<hr>
+				<p>
+					<a id="Power">Power.</a> The weaker the player, the stronger his lust for a racquet, at any price, that promises to improve his &quot;power.&quot; No term features so prominently in racquet ads, yet has so little clarity of meaning. It could mean:
+				</p>
+				<p>
+					(1) racquet bounce (i.e. high coefficient of restitution); (2) high swingweight (a racquet which allows you to load up a lot of angular momentum so that it will not bounce off the ball); or (3) low Work (an efficient racquet, which requires the least player effort to achieve a given ball speed, or, which produces the greatest ball speed with a given player effort).
+				</p>
+				<p>
+					It appears that the common understanding of &quot;power&quot; is (1), high coefficient of restitution.
+				</p>
+				<p>
+					Proponents of stiff materials make the claim that their racquets are &quot;powerful&quot; because the stiff frame recovers in time to catapult the ball forward. Where is the experimental confirmation of this claim? I have seen none, and my invitation has been extended for over four years. Professor Howard Brody, however, says this:
+				</p>
+				<blockquote>
+					<p>
+						&quot;When a racket flexes, most of the energy that goes into racket frame deformation is not returned to the ball ... In the literature of tennis, there is evidence that there is little difference in racket response between a free racquet and a racket with its handle firmly clamped, for ball impacts along the long axis of the racket. When a ball hits a racket, it produces a transverse wave that travels along the racket, and then is reflected both from the tip and from the butt end. If the wave that is reflected from the butt end arrives at the impact point after the ball has departed, the ball will have no knowledge of how the handle is secured. The propagation time of such a wave can be estimated by measuring the frequency of the lowest mode of free oscillation of the racquet (about 150 Hz) and separation between the nodes (0.4 m). This gives a velocity of about 120 m/s, and a round trip propagation time to the butt and back of 8 ms, which is considerably longer than the dwell time on the strings. This might explain why the free racket and the clamped handle data taken in the lab show little difference.&quot; H. Brody, &quot;The Physics of Tennis III. The Ball-Racket Interaction,&quot; 65 Am. J. Phys. 981, 982 (Oct. 1997).
+					</p>
+				</blockquote>
+				<p>
+					And, in any case, the strings are the major component in racquet bounce. Maybe the advantage of the stiff frame is that it does not flex as much initially, thus requiring the strings to stretch more on impact. Anecdotally, stiff frames with large heads are known to be bouncy, with a pronounced trampoline effect. Control, however, suffers as bounce increases, particularly with large heads. Expert players tend to prefer low &quot;power&quot; racquets because they don't need any help putting pace on the ball, and they have learned the value of accurate placement.
+				</p>
+				<p>
+					In science, power is measured in watts. A watt is one joule of energy/work/heat/effort per second, and one horsepower is 746 watts. Power is the rate of doing work. Of course, a racquet cannot be given a horsepower rating. The player/racquet system has power, with the player providing the effort and the racquet providing the interface with the ball to deliver that player effort. So if, consistent with this scientific meaning, we consider a powerful racquet to be one can achieve a certain ball speed with the least player effort per unit time, and we limit the time of the stroke, what power then becomes is the inverse of Work: low Work means high power. In the June 1999 Racquet Evaluations, Power was thus defined, but the reaction has been unfavorable because this is not the popular understanding of the term &quot;power.&quot; Instead, the new term will be &quot;Efficiency.&quot; Those who understand will know how to use the information provided by the Efficiency rankings.
+				</p>
+				<hr>
+				<p>
+					<a id="Control">Control</a> -- everybody wants it, but nobody knows how to measure it. Just what is &quot;control,&quot; exactly? According to the USRSA, power and control are two ends of a continuum, so high power is low control, and vice versa. This makes sense, provided that you assume that the composite of head size/flex that determines racquet bounce is synonymous with &quot;power.&quot;
+				</p>
+				<p>
+					But if power and control are mutually exclusive, it requires some ingenuity to devise an ad campaign emphasizing control that will lure the crypto-macho consumer. My personal favorite is Head's &quot;Control Your Rage&quot; ad for its &quot;titanium&quot; racquets, the one that has a settings on the cross bar for &quot;Destroy - Annihilate - Humiliate&quot; (the opponent, presumably). See, you've pandered to the lust for power, and you've introduced some quaint notion of the need for moderation and sportsmanship in its use. The control setting, however, gets no wimpier than &quot;Destroy.&quot;
+				</p>
+				<p>
+					Another meaning of &quot;control&quot; might be how easy the racquet is to wield, but now we have some confusion with &quot;maneuverability&quot; and all of its uncertainties. &quot;Stability&quot; is another vague term often heard, which seems to connote &quot;control,&quot; but according to the USRSA, stability is just high swingweight, i.e. the opposite of &quot;maneuverability&quot; -- and there we are again back trying to understand just what is meant by &quot;maneuverability.&quot; The idea of controlling the shot by your effort during the impact is refuted by the above quote from Professor Brody.
+				</p>
+				<hr>
+				<p class="text-center">
+					Macro Criteria for Meaningful Racquet Rankings
+				</p>
+				<p>
+					Five macro criteria comprise the results under the relevant performance criteria. These macro criteria are Efficiency, Elbow Safety, Shoulder Safety, Wrist Safety, and Dexterity.
+				</p>
+				<p>
+					The rankings under the performance criteria (Torque, Shock, etc.) for each of the five benchmark conditions were compiled and then weighted according to the comparative magnitude of the forces. See the <a href="2002/Weighting_Factors.html">Weighting Factors</a>.
+				</p>
+				<p>
+					<a id="Efficiency">Efficiency</a> Which racquets produce the required ball speed with the least effort. The higher ranking (low numbers are better, just like player rankings) racquets under the macro criterion of Efficiency require the least effort. Work ranks under the five benchmark conditions were weighted and summed to get a composite score, which was then sorted for <a href="2002/efficiency.html">Efficiency</a> rank.
+				</p>
+				<p>
+					<a id="Elbow_Safety">Elbow Safety</a> See <a href="faq.html#id-tennis-elbow">what causes tennis elbow</a>. The macro criterion of Elbow Safety comprises the evaluation criteria of 1.5*Elbow Crunch, Torque, Shock, 0.5*Moment, and 0.5*Flex. Moment and Flex were weighted half as much as Torque and Shock, which are more important. Flex serves to ameliorate Torque by absorbing the bending energy and (possibly) increasing the dwell time, and the great weight and preponderance of anecdotal evidence now supports the conclusion that stiff racquets are a risk factor for tennis elbow. Moment is not as severe a force, but it is present for longer during play and stresses the elbow as the arm holds up the racquet. Moment also factors into Torsion. Elbow Crunch was weighted 1.5 times Torque and Shock, because it is even more important. Each of these evaluation criteria (Torque, etc.) produced composite rankings when the results under the five benchmark conditions were compiled, weighted, summed, and sorted. These composite rankings then were compiled, weighted, summed, and sorted to produce rankings under the macro criterion of <a href="2002/elbowsafety.html">Elbow Safety</a>.
+				</p>
+				<p>
+					<a id="Shoulder_Safety">Shoulder Safety</a> The composite <a href="2002/shouldersafety.html">rankings for Shoulder Safety</a> used an equally weighted mix of: Shoulder Pull, Shoulder Crunch, Impact Force, and Torque.
+				</p>
+				<p>
+					<a id="Wrist_Safety">Wrist Safety</a> The macro criterion of <a href="2002/wristsafety.html">Wrist Safety</a> comprises a weighted mix of: 1.5*Wrist Crunch, Moment, Torque, and 0.5*Flex. Moment stresses the wrist nearly constantly, and Wrist Crunch and Torque produce bigger but more infrequent stresses on impact. Flex is ameliorative of Torque, with the more flexible racquets (low flex number) absorbing more of the bending force produced by impact.
+				</p>
+				<p>
+					<a id="Dexterity">Dexterity</a> The macro criterion of <a href="2002/dexterity.html">Dexterity</a> comprises the evaluation criteria of Moment, Swingweight, and 0.5*Weight. Dexterity rankings are intended to reflect how easy the racquet is to wield before impact. Moment and Swingweight are weighted equally, and Weight is half as important because it is already comprised in Moment. This macro criterion should be of interest principally to weaker players. Expert players should disregard Dexterity because the good racquets tend to score low on it.
+				</p>
+				<p>
+					Overall Rankings
+				</p>
+				<p>
+					A weighted mix of: Efficiency, 1.5*Elbow Safety, Shoulder Safety, Wrist Safety, and 0.5*Dexterity were summed to produce overall rankings for racquets to be used by beginners and weak players. For strong players, the Dexterity macro criterion was disregarded.
+				</p>
+				<p>
+					<a href="2002/weakoverall.html">Overall Racquet Rankings for Weak Players 2002</a>
+				</p>
+				<p>
+					<a href="2001/expertstopbottom30.html">Overall Racquet Rankings for Experts 2002</a>
+				</p>
+				<p class="text-center">
+					Rankings under the Macro Criteria <a href="2002/efficiency.html">Efficiency</a> | <a href="2002/elbowsafety.html">Elbow Safety</a> | <a href="2002/shouldersafety.html">Shoulder Safety</a> | <a href="2002/wristsafety.html">Wrist Safety</a> | <a href="2002/dexterity.html">Dexterity</a>
+				</p>
+				<p class="text-center">
+					Manufacturer Report Card (how each racquet ranks under all of the evaluation criteria) <a href="2002/Manufacturers/babolat.html">Babolat</a> | <a href="2002/Manufacturers/blackburne.html">Blackburne</a> | <a href="2002/Manufacturers/cayman.html">Cayman</a> | <a href="2002/Manufacturers/dunlop.html">Dunlop</a> | <a href="2002/Manufacturers/fischer.html">Fischer</a> | <a href="2002/Manufacturers/gosen.html">Gosen</a> | <a href="2002/Manufacturers/head.html">Head</a> | <a href="2002/Manufacturers/prince.html">Prince</a> | <a href="2002/Manufacturers/pro_kennex.html">Pro Kennex</a> | <a href="2002/Manufacturers/slazenger.html">Slazenger</a> | <a href="2002/Manufacturers/topspin.html">Topspin</a> | <a href="2002/Manufacturers/volkl.html">Volkl</a> | <a href="2002/Manufacturers/weed.html">Weed</a> | <a href="2002/Manufacturers/wilson.html">Wilson</a> | <a href="2002/Manufacturers/yonex.html">Yonex</a>
+				</p>
+				<p class="text-center">
+					Rankings Under the Evaluation Criteria: These are the most useful rankings because they come directly from formula calculations. <b><a style="color: rgb(0,0,255)" href="2002/Criteria_Rankings/moment_rankings.html">Moment</a> | <a href="2002/Criteria_Rankings/torque.html">Torque</a> | <a href="2002/Criteria_Rankings/shock.html">Shock</a> | <a href="2002/Criteria_Rankings/work.html">Work</a> | <a href="2002/Criteria_Rankings/shoulder_pull.html">Shoulder Pull</a> | <a href="2002/Criteria_Rankings/shoulder_crunch.html">Shoulder Crunch</a> | <a href="2002/Criteria_Rankings/elbowcrunch.html">Elbow Crunch</a> | <a href="2002/Criteria_Rankings/wristcrunch.html">Wrist Crunch</a> | <a href="2002/Criteria_Rankings/impact_force.html">Impact Force</a> | <a href="2002/Criteria_Rankings/sweetspot.html">Sweet Spot</a> | <a href="2002/Criteria_Rankings/flex.html">Flex</a> | <a href="2002/Criteria_Rankings/swingweight.html">Swingweight</a> | <a href="2002/Criteria_Rankings/mass.html">Weight</a> </b>
+				</p>
+				<p>
+					<a href="2002/Specs.html">Racquet Specs according to U.S. Racquet Stringers Association</a> of 167 racquets currently available, including price, head size, string pattern, and flex.
+				</p>
+				<p>
+					<a href="2002/Weighting_Factors.html">Weighting Factors used in the composite rankings</a>
+				</p>
+			</div>
 <!-- #bbinclude "footer.incl" -->
 <!-- begin footer.incl -->
-
 <!-- begin navbar.incl -->
-    </div><!-- /.col-md-9 -->
-	<div class="col-md-3">
-		<ul class="nav nav-pills nav-stacked">
-			<li> <a href="/about_this_site.html">About this Site</a> </li>
-			<li> <a href="/sevencri.html">Introduction to Racquet Science</a> </li>
-			<li> <a href="/idiots_guide.html">Complete Idiot's Guide to Choosing a Racquet</a> </li>
-			<li> <a href="/faq.html">Frequently Asked Questions (FAQ)</a> </li>
-			<li> <a href="/formulas.html">Formulas for Evaluation of Racquet Performance</a> </li>
-			<li> <a href="/derivations.html">Derivations of Formulas</a> </li>
-			<li> <a href="/2002/index.html">Racquet Rankings</a> </li>
-			<li> <a href="/2002/Mfr.html">Racquet Performance by Manufacturer</a> </li>
-			<li> <a href="/2002/Specs.html">Specs of Current Racquets</a> </li>
-			<li> <a href="/Discontinued.html">Specs of Discontinued Racquets</a> </li>
-			<li> <a href="/balancetip.html">Customizing Balance</a> </li>
-			<li> <a href="/customizing.html">Matching Racquets</a> </li>
-			<li> <a href="/CounterweightingEffect.html">Tailweighted Hammer Tops All Other Racquets</a> </li>
-			<li> <a href="/site.html">Site Contents</a> </li>
-			<li> <a href="/directory.html">Site Directory</a> </li>
-			<li> <a href="/links.html">Links</a> </li>
-			<li> <a href="/whatsnew.html">What's New</a> </li>
-			<li> <a href="/index.html">Home Page</a> </li>
-		</ul>
-	</div><!-- /.col-md-3 -->
+		</div>
+<!-- /.col-md-9 -->
+		<nav class="col-md-3">
+			<ul class="nav nav-pills nav-stacked">
+				<li><a href="/about_this_site.html">About this Site</a></li>
+				<li><a href="/sevencri.html">Introduction to Racquet Science</a></li>
+				<li><a href="/idiots_guide.html">Complete Idiot&rsquo;s Guide to Choosing a Racquet</a></li>
+				<li><a href="/faq.html">Frequently Asked Questions (FAQ)</a></li>
+				<li><a href="/formulas.html">Formulas for Evaluation of Racquet Performance</a></li>
+				<li><a href="/derivations.html">Derivations of Formulas</a></li>
+				<li><a href="/2002/index.html">Racquet Rankings</a></li>
+				<li><a href="/2002/Mfr.html">Racquet Performance by Manufacturer</a></li>
+				<li><a href="/2002/Specs.html">Specs of Current Racquets</a></li>
+				<li><a href="/Discontinued.html">Specs of Discontinued Racquets</a></li>
+				<li><a href="/balancetip.html">Customizing Balance</a></li>
+				<li><a href="/customizing.html">Matching Racquets</a></li>
+				<li><a href="/CounterweightingEffect.html">Tailweighted Hammer Tops All Other Racquets</a></li>
+				<li><a href="/site.html">Site Contents</a></li>
+				<li><a href="/directory.html">Site Directory</a></li>
+				<li><a href="/links.html">Links</a></li>
+				<li><a href="/whatsnew.html">What&rsquo;s New</a></li>
+				<li><a href="/index.html">Home Page</a></li>
+			</ul>
+		</nav>
+<!-- /.col-md-3 -->
 <!-- end navbar.incl -->
-
-	</div><!-- /.row -->
-</div><!-- /.container-fluid -->
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	</div>
+<!-- /.row -->
+</div>
+<!-- /.container-fluid -->
+<script src="http://code.jquery.com/jquery-3.2.1.min.js">
+</script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+</script>
 <!-- end footer.incl -->
 <!-- end bbinclude -->
 </body>

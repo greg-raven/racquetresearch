@@ -2,15 +2,14 @@
 <html lang="en-US">
 <head>
 	<title>Shoulder Pull Formula Derivation</title>
-
 <!-- #bbinclude "meta.incl" -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-<meta name="description" content="Racquet evaluation and ranking by physics re tennis elbow.">
-<meta name="keywords" content="tennis, tennis elbow, racket, racquet, shock, torque, shoulder, eccentric impact, coefficient of restitution, conservation of momentum">
-<link rel="stylesheet" href="/_assets/css/rr.css" type="text/css" media="screen">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<meta name="description" content="Racquet evaluation and ranking by physics re tennis elbow.">
+	<meta name="keywords" content="tennis, tennis elbow, racket, racquet, shock, torque, shoulder, eccentric impact, coefficient of restitution, conservation of momentum">
+	<link rel="stylesheet" href="/_assets/css/rr.css" type="text/css" media="screen">
 <!-- end of meta content -->
 <!-- end bbinclude -->
 </head>
@@ -18,103 +17,111 @@
 <!-- #bbinclude "header.incl" -->
 <!-- begin header.incl -->
 <div class="container-fluid">
-    <header>
-      <div class="page-header">
-        <h1> RACQUET SCIENCE <small>using physics to help select a racquet</small> </h1>
-      </div>
-    </header>
-    <div class="row">
-        <div class="col-md-9">
+	<header>
+		<div class="page-header">
+			<h1>
+				RACQUET SCIENCE <small>&mdash; using physics to help select a racquet</small>
+			</h1>
+		</div>
+	</header>
+	<div class="row">
+		<div class="col-md-9">
 <!-- end header.incl -->
 <!-- end bbinclude -->
-		<h2>Shoulder Pull Formula Derivation</h2>
-		<p>Shoulder Pull is the centripetal force, in Newtons,with the shoulder being a distance <b><i>R</i></b> (= 0.61 + r/100) meters from the racquet mass center. The Shoulder Pull force, measured in units of Newtons (1 Newton = 0.225 lb.) attributable to the racquet alone is derived from the <a href="work_formula.html">Work formula</a> and the general formula for centripetal force (centrifugal force). See the <a href="derivations.html#Shoulder_Pull">accompanying remarks</a>. A complete description of all variables used in this derivation follows at the end.</p>
-		<p><img src="/_assets/img/should18.gif" width="782" height="448" alt=""></p>
+			<h2>
+				Shoulder Pull Formula Derivation
+			</h2>
+			<p>
+				Shoulder Pull is the centripetal force, in Newtons,with the shoulder being a distance <b><i>R</i></b> (= 0.61 + r/100) meters from the racquet mass center. The Shoulder Pull force, measured in units of Newtons (1 Newton = 0.225 lb.) attributable to the racquet alone is derived from the <a href="work_formula.html">Work formula</a> and the general formula for centripetal force (centrifugal force). See the <a href="derivations.html#Shoulder_Pull">accompanying remarks</a>. A complete description of all variables used in this derivation follows at the end.
+			</p>
+			<p>
+				<img src="/_assets/img/should18.gif" width="782" height="448" alt="">
+			</p>
 <!-- #bbinclude "legend_of_variables.incl" -->
-<table id="legend">
-<tr> 
-	<th colspan="3">Legend of Variables</th>
-</tr>
-<tr> 
-	<td><i>I</i></td>
-	<td>=</td>
-	<td>moment of inertia (swing weight) of racquet, in kilograms&middot;centimeters&sup2;</td>
-</tr>
-<tr> 
-	<td><i>b</i></td>
-	<td>=</td>
-	<td>mass of ball, in kilograms</td>
-</tr>
-<tr> 
-	<td><i>d</i></td>
-	<td>=</td>
-	<td>distance from axis of rotation to impact point, in centimeters</td>
-</tr>
-<tr> 
-	<td><i>s</i></td>
-	<td>=</td>
-	<td>ball velocity, in meters-per-second (positive is away from player)</td>
-</tr>
-<tr> 
-	<td><i>r</i></td>
-	<td>=</td>
-	<td>distance from axis of rotation to mass center, in centimeters</td>
-</tr>
-<tr> 
-	<td><i>v</i></td>
-	<td>=</td>
-	<td>linear velocity of mass center, in meters-per-second</td>
-</tr>
-<tr> 
-	<td><i>m</i></td>
-	<td>=</td>
-	<td>mass of racquet, in kilograms</td>
-</tr>
-<tr> 
-	<td><i>c</i></td>
-	<td>=</td>
-	<td>coefficient of restitution of the racquet/ball system</td>
-</tr>
-</table>
-
+			<table id="legend">
+				<tr>
+					<th colspan="3">Legend of Variables</th>
+				</tr>
+				<tr>
+					<td><i>I</i></td>
+					<td>=</td>
+					<td>moment of inertia (swing weight) of racquet, in kilograms&middot;centimeters&sup2;</td>
+				</tr>
+				<tr>
+					<td><i>b</i></td>
+					<td>=</td>
+					<td>mass of ball, in kilograms</td>
+				</tr>
+				<tr>
+					<td><i>d</i></td>
+					<td>=</td>
+					<td>distance from axis of rotation to impact point, in centimeters</td>
+				</tr>
+				<tr>
+					<td><i>s</i></td>
+					<td>=</td>
+					<td>ball velocity, in meters-per-second (positive is away from player)</td>
+				</tr>
+				<tr>
+					<td><i>r</i></td>
+					<td>=</td>
+					<td>distance from axis of rotation to mass center, in centimeters</td>
+				</tr>
+				<tr>
+					<td><i>v</i></td>
+					<td>=</td>
+					<td>linear velocity of mass center, in meters-per-second</td>
+				</tr>
+				<tr>
+					<td><i>m</i></td>
+					<td>=</td>
+					<td>mass of racquet, in kilograms</td>
+				</tr>
+				<tr>
+					<td><i>c</i></td>
+					<td>=</td>
+					<td>coefficient of restitution of the racquet/ball system</td>
+				</tr>
+			</table>
 <!-- end of legend of variables -->
 <!-- end bbinclude -->
-	</td>
-</tr>
-</table>
 <!-- #bbinclude "footer.incl" -->
 <!-- begin footer.incl -->
-
 <!-- begin navbar.incl -->
-    </div><!-- /.col-md-9 -->
-	<div class="col-md-3">
-		<ul class="nav nav-pills nav-stacked">
-			<li> <a href="/about_this_site.html">About this Site</a> </li>
-			<li> <a href="/sevencri.html">Introduction to Racquet Science</a> </li>
-			<li> <a href="/idiots_guide.html">Complete Idiot's Guide to Choosing a Racquet</a> </li>
-			<li> <a href="/faq.html">Frequently Asked Questions (FAQ)</a> </li>
-			<li> <a href="/formulas.html">Formulas for Evaluation of Racquet Performance</a> </li>
-			<li> <a href="/derivations.html">Derivations of Formulas</a> </li>
-			<li> <a href="/2002/index.html">Racquet Rankings</a> </li>
-			<li> <a href="/2002/Mfr.html">Racquet Performance by Manufacturer</a> </li>
-			<li> <a href="/2002/Specs.html">Specs of Current Racquets</a> </li>
-			<li> <a href="/Discontinued.html">Specs of Discontinued Racquets</a> </li>
-			<li> <a href="/balancetip.html">Customizing Balance</a> </li>
-			<li> <a href="/customizing.html">Matching Racquets</a> </li>
-			<li> <a href="/CounterweightingEffect.html">Tailweighted Hammer Tops All Other Racquets</a> </li>
-			<li> <a href="/site.html">Site Contents</a> </li>
-			<li> <a href="/directory.html">Site Directory</a> </li>
-			<li> <a href="/links.html">Links</a> </li>
-			<li> <a href="/whatsnew.html">What's New</a> </li>
-			<li> <a href="/index.html">Home Page</a> </li>
-		</ul>
-	</div><!-- /.col-md-3 -->
+		</div>
+<!-- /.col-md-9 -->
+		<nav class="col-md-3">
+			<ul class="nav nav-pills nav-stacked">
+				<li><a href="/about_this_site.html">About this Site</a></li>
+				<li><a href="/sevencri.html">Introduction to Racquet Science</a></li>
+				<li><a href="/idiots_guide.html">Complete Idiot&rsquo;s Guide to Choosing a Racquet</a></li>
+				<li><a href="/faq.html">Frequently Asked Questions (FAQ)</a></li>
+				<li><a href="/formulas.html">Formulas for Evaluation of Racquet Performance</a></li>
+				<li><a href="/derivations.html">Derivations of Formulas</a></li>
+				<li><a href="/2002/index.html">Racquet Rankings</a></li>
+				<li><a href="/2002/Mfr.html">Racquet Performance by Manufacturer</a></li>
+				<li><a href="/2002/Specs.html">Specs of Current Racquets</a></li>
+				<li><a href="/Discontinued.html">Specs of Discontinued Racquets</a></li>
+				<li><a href="/balancetip.html">Customizing Balance</a></li>
+				<li><a href="/customizing.html">Matching Racquets</a></li>
+				<li><a href="/CounterweightingEffect.html">Tailweighted Hammer Tops All Other Racquets</a></li>
+				<li><a href="/site.html">Site Contents</a></li>
+				<li><a href="/directory.html">Site Directory</a></li>
+				<li><a href="/links.html">Links</a></li>
+				<li><a href="/whatsnew.html">What&rsquo;s New</a></li>
+				<li><a href="/index.html">Home Page</a></li>
+			</ul>
+		</nav>
+<!-- /.col-md-3 -->
 <!-- end navbar.incl -->
-
-	</div><!-- /.row -->
-</div><!-- /.container-fluid -->
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	</div>
+<!-- /.row -->
+</div>
+<!-- /.container-fluid -->
+<script src="http://code.jquery.com/jquery-3.2.1.min.js">
+</script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+</script>
 <!-- end footer.incl -->
 <!-- end bbinclude -->
 </body>
